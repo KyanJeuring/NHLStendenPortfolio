@@ -1,0 +1,32 @@
+nav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--primaryColor);
+    font-family: sans-serif;
+}
+
+nav>ul>li {
+    list-style-type: none;
+    float: left;
+}
+
+nav a {
+    display: block;
+    background-color: var(--primaryColor);
+    color: white;
+    text-align: center;
+    padding: 20px 25px;
+    border: 1px solid var(--primaryColor);
+    text-decoration: none;
+}
+
+nav a.active {
+    background-color: var(--activeButtonColor);
+    border: 1px solid var(--activeButtonColor);
+}
+
+nav a:hover {
+    background-color: var(--activeButtonColor);
+    border: 1px solid var(--activeButtonColor);
+}

@@ -104,6 +104,7 @@ div ul{
     margin: 0%;
 }
 div a {
+    font-family: sans-serif;
     margin-left: 40px;
     text-decoration: none;
 }
