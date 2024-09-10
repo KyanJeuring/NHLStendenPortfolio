@@ -1,0 +1,25 @@
+body{
+    background-color: chocolate;
+}
+
+h1{
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    color: black;
+}
+
+#div1{
+    background-color: aqua;
+}
+
+#div2{
+    background-color: whitesmoke;
+    margin: auto;
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
