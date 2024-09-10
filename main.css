@@ -27,7 +27,9 @@ nav>ul>li {
     list-style-type: none;
     float: left;
 }
-
+a{
+    text-decoration: none;
+}
 nav a {
     display: block;
     background-color: var(--primaryColor);
