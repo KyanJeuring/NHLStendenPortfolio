@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Find The Mistakes</title>
-<link rel="icon" type="image/x-icon" href="../../Assets/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../../../Assets/favicon.ico">
 </head>
 <body>
     <?php

@@ -3,6 +3,7 @@
     <head>
         <title>File:Cond_IfElseNest.php</title>
         <meta charset="UTF-8"/>
+        <link rel="icon" type="image/x-icon" href="../../../Assets/favicon.ico">
     </head>
     <body>
     <?php

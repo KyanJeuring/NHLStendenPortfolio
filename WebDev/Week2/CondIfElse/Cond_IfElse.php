@@ -3,6 +3,7 @@
     <head>
         <title>File:Cond_IfElse.php</title>
         <meta charset="UTF-8"/>
+        <link rel="icon" type="image/x-icon" href="../../../Assets/favicon.ico">
     </head>
     <body>
     <?php
@@ -18,8 +19,8 @@
      * clause is provided.
      * Semantically speaking, an else clause should always be provided. Please check the following example.
      */
-    $condition = TRUE;
-    if($condition){
+    $condition = FALSE;
+    if($condition == TRUE){
         echo "The provided condition either contains or results in TRUE. Go ahead try to change it into FALSE.
         You can also change the condition into one using a comparison operator.";
     }
