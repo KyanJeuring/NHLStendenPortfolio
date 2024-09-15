@@ -1,0 +1,56 @@
+:root
+{
+    --divColor: #f2f2f2;
+}
+body
+{
+    display: grid;
+    grid-template-columns: repeat(26, 1fr);
+}
+
+h1
+{
+    grid-column: 1/27;
+}
+
+h3
+{
+    margin: 2px;
+}
+
+.MainFlex
+{
+    grid-column: 1/25;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: space-evenly;
+}
+
+.MainFlex > div
+{
+    display: flex;
+    background-color: var(--divColor);
+    height: 250px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+.MainGrid
+{
+    display: grid;
+    grid-column: 1/27;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.MainGrid > div
+{   
+    background-color: var(--divColor);
+    display: flex;
+    height: inherit;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,128 @@
+:root
+{
+    --divColor: #f2f2f2;
+}
+body
+{
+    margin: 0%;
+}
+
+.MainDiv
+{
+    margin: 0 auto;
+    background-color: #000;
+    width: 800px;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(26, 1fr);
+    grid-template-rows: repeat(26, 1fr);
+    gap:1em
+
+}
+#d1
+{
+    grid-area: 1/1/4/6;
+    background-color: var(--divColor);
+}
+
+#d2
+{
+    grid-area: 1/6/4/16;
+    background-color: var(--divColor);
+}
+
+#d3
+{
+    grid-area: 4/1/10/4;
+    background-color: var(--divColor);
+}
+
+#d4
+{
+    grid-area: 10/1/21/4;
+    background-color: var(--divColor);
+}
+
+#d5
+{
+    grid-area: 1/25/21/27;
+    background-color: var(--divColor);
+}
+
+#d6
+{
+    grid-area: 10/16/16/21;
+    background-color: var(--divColor);
+}
+
+#d7
+{
+    grid-area: 10/21/16/25;
+    background-color: var(--divColor);
+}
+
+#d8
+{
+    grid-area: 16/10/21/16;
+    background-color: var(--divColor);
+}
+
+#d9
+{
+    grid-area: 16/16/21/25;
+    background-color: var(--divColor);
+}
+
+#d10
+{
+    grid-area: 21/10/25/16;
+    background-color: var(--divColor);
+}
+
+#d11
+{
+    grid-area: 25/4/27/10;
+    background-color: var(--divColor);
+}
+
+#d12
+{
+    grid-area: 26/10/27/25;
+    background-color: var(--divColor);
+}
+
+#red1
+{
+    grid-area: 4/4/16/16;
+    background-color: red;
+}
+
+#red2
+{
+    grid-area: 21/25/27/27;
+    background-color: red;
+}
+
+#yellow1
+{
+    grid-area: 1/16/4/25;
+    background-color: yellow;
+}
+
+#yellow2
+{
+    grid-area: 4/16/10/25;
+    background-color: yellow;
+}
+
+#yellow3
+{
+    grid-area: 21/1/27/4;
+    background-color: yellow;
+}
+
+#blue
+{
+    grid-area: 21/16/26/25;
+    background-color: blue;
+}

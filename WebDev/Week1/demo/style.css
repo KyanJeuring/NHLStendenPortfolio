@@ -1,21 +1,26 @@
-body{
+body
+{
     background-color: chocolate;
 }
 
-h1{
+h1
+{
     color: blue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-p{
+p
+{
     color: black;
 }
 
-#div1{
+#div1
+{
     background-color: aqua;
 }
 
-#div2{
+#div2
+{
     background-color: whitesmoke;
     margin: auto;
     height: 50px;
