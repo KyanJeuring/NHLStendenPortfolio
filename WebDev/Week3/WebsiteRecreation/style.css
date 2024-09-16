@@ -1,0 +1,199 @@
+@font-face
+{
+font-family: "YoungSerif";
+src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+@font-face
+{
+font-family: "Outfit";
+src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+:root
+{
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+    --Brown800: hsl(14, 45%, 36%);
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(322.5, 100%, 98.43%);
+}
+
+body
+{
+    font-Family: "Outfit"; 
+    font-weight: 400, 600, 700;
+    font-size: 16px;
+    background-color: var(--Stone100);
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+}
+
+.mainDiv
+{
+    display: grid;
+    grid-template-columns: 5px 1fr 5px;
+    grid-column: 2/3;
+    background-color: white;
+    border-radius: 3%;
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    overflow-wrap: break-word;
+}
+
+#omeletteImage
+{
+    grid-column: 2/3;
+    width: 100%;
+    border-radius: 3%;
+    padding: 0%;
+    margin: 0%;
+}
+
+.mainDiv > hr 
+{
+    grid-column: 2/3;
+    color: var(--Stone900)
+}
+
+.mainDiv > h1 
+{
+    font-Family: "YoungSerif"; 
+    font-weight: 400;
+    grid-column: 2/3;
+    color: var(--Stone900);
+}
+
+.mainDiv > h2
+{
+    margin: 0%;
+    font-Family: "YoungSerif"; 
+    font-weight: 400;
+    grid-column: 2/3;   
+    color: var(--Brown800);
+}
+
+.mainDiv > p
+{
+    grid-column: 2/3;
+    margin: 0%;
+    color: var(--Stone900);
+}
+
+.mainDiv > ul
+{
+    grid-column: 2/3;
+    padding-left: 5%;
+}
+
+.mainDiv > ul > li
+{
+    padding-left: 5%;
+    color: var(--Stone900);
+}
+
+.mainDiv > ul > li::marker
+{
+    color: var(--Brown800);
+}
+
+.mainDiv > ol
+{
+    grid-column: 2/3;
+    padding-left: 5%;
+}
+
+.mainDiv > ol > li
+{
+    padding-left: 5%;
+    color: var(--Stone900);
+}
+
+.mainDiv > ol > li::marker
+{
+    color: var(--Brown800);
+}
+
+.mainDiv > table
+{
+    grid-column: 2/3;
+    margin-top: 5%;
+}
+
+.mainDiv > table, tr, td
+{
+    border: 1px solid var(--Stone900);
+    border-collapse: collapse;  
+}
+
+.tableColum1
+{
+    color: var(--Stone900);
+}
+
+.tableColum2
+{
+    color: var(--Brown800);
+}
+
+.subDiv
+{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 5px 1fr 5px;
+    grid-column: 2/3;
+    background-color: var(--Rose50);
+    border-radius: 3%;
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    overflow-wrap: break-word;
+}
+
+.subDiv > h3
+{
+    font-Family: "YoungSerif"; 
+    font-weight: 400;
+    grid-column: 2/3;
+    margin: 0%;
+    color: var(--Rose800);
+}
+
+.subDiv > p
+{
+    grid-column: 2/3;
+    margin: 0%;
+    color: var(--Stone900);
+}
+
+.subDiv > form
+{
+    grid-column: 2/3;
+}
+
+#num
+{
+    width: 50px;
+}
+
+
+.subDiv > ul
+{
+    grid-column: 2/3;
+    padding-left: 5%;
+}
+
+.subDiv > ul > li
+{
+    grid-column: 2/3;
+    padding-left: 5%;
+    color: var(--Stone900);
+}
+
+.subDiv > ul > li::marker
+{
+    color: var(--Rose800);
+}

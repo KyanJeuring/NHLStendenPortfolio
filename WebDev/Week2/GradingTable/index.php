@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grading Table</title>
+    <link rel="icon" type="image/x-icon" href="../../../Assets/favicon.ico">
 </head>
 <body>
     <form action="index.php" METHOD="POST">
         <label for="grade">Grade:</label>
-        <input type="number" id="grade" name="grade"><br>
+        <input style="width:50px;" type="number" name="grade">
         <input type="submit" value="Submit">
     </form>
     <?php
+    error_reporting(0);
     $grade = $_POST["grade"];
 
     echo "<h3>Using the if/else structure</h3>";
