@@ -40,17 +40,17 @@
         </ol>
         <hr>
         <h2>Nutrition</h2>
-        <p>The table below shows nutritional values per serving without the additional fillings.</p>
+        <p id="paddingText">The table below shows nutritional values per serving without the additional fillings.</p>
         <table>
-            <tr>
+            <tr class="tableBottomBorder">
                 <td class="tableColum1">Calories</td>
                 <td class="tableColum2"><b>277kcal</b></td>
             </tr>
-            <tr></tr>
+            <tr class="tableBottomBorder">
                 <td class="tableColum1">Carbs</td>
                 <td class="tableColum2"><b>0g</b></td>
             </tr>
-            <tr>
+            <tr class="tableBottomBorder">
                 <td class="tableColum1">Protein</td>
                 <td class="tableColum2"><b>20g</b></td>
             </tr>
@@ -59,39 +59,6 @@
                 <td class="tableColum2"><b>22g</b></td>
             </tr>
         </table>
-        <div class="subDiv">
-        <form action="index.php" METHOD="POST">
-            <label>Number:</label>
-            <input type="number" id="num" name="num">
-            <input type="submit" value="Submit">
-        </form>
-            <?php
-                error_reporting(0);
-                function compareToHundred($num) {
-                    if ($num > 100) {
-                        return "<p>The number $num is greater than 100.\n</p>";
-                    } elseif ($num < 100) {
-                        return "<p>The number $num is less than 100.\n</p>";
-                    } else {
-                        return "<p>The number $num is equal to 100.\n</p>";
-                    }
-                }
-                $num = $_POST["num"];
-                if(isset($num))
-                {
-                    echo compareToHundred($num);
-                }
-                else
-                {
-                    echo "<p>Please input a number to compare it to 100.</p>";
-                }
-
-                function d($calories, $carbs, $protein, $fat, $dietApproved)
-                {
-
-                }
-            ?>
-        </div>
     </div>
 </body>
 </html>

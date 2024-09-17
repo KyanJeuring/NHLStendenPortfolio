@@ -85,6 +85,15 @@ body
     color: var(--Stone900);
 }
 
+#paddingText
+{
+    grid-column: 2/3;
+    margin: 0%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: var(--Stone900);
+}
+
 #mainDiv > ul
 {
     grid-column: 2/3;
@@ -94,6 +103,8 @@ body
 #mainDiv > ul > li
 {
     padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     color: var(--Stone900);
 }
 
@@ -111,34 +122,38 @@ body
 #mainDiv > ol > li
 {
     padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     color: var(--Stone900);
 }
 
 #mainDiv > ol > li::marker
 {
     color: var(--Brown800);
+    font-weight: bold;
 }
 
 #mainDiv > table
 {
     grid-column: 2/3;
-    margin-top: 5%;
+    border-collapse: collapse;
 }
 
-#mainDiv > table, tr, td
+.tableBottomBorder
 {
-    border: 1px;
-    border-bottom-style: solid var(--Stone900);
+    border-bottom: 1px solid var(--Stone900);
 }
 
 .tableColum1
 {
     color: var(--Stone900);
+    padding: 2%;
 }
 
 .tableColum2
 {
     color: var(--Brown800);
+    padding: 2%;
 }
 
 .subDiv
@@ -176,12 +191,6 @@ body
     grid-column: 2/3;
 }
 
-#num
-{
-    width: 50px;
-}
-
-
 .subDiv > ul
 {
     grid-column: 2/3;
@@ -192,6 +201,8 @@ body
 {
     grid-column: 2/3;
     padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     color: var(--Stone900);
 }
 
