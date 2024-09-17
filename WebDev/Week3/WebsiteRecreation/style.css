@@ -28,10 +28,10 @@ body
     font-size: 16px;
     background-color: var(--Stone100);
     display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-columns: 1fr 1.8fr 1fr;
 }
 
-.mainDiv
+#mainDiv
 {
     display: grid;
     grid-template-columns: 5px 1fr 5px;
@@ -53,13 +53,15 @@ body
     margin: 0%;
 }
 
-.mainDiv > hr 
+#mainDiv > hr 
 {
     grid-column: 2/3;
+    height: 1px;
+    width: 100%;
     color: var(--Stone900)
 }
 
-.mainDiv > h1 
+#mainDiv > h1 
 {
     font-Family: "YoungSerif"; 
     font-weight: 400;
@@ -67,7 +69,7 @@ body
     color: var(--Stone900);
 }
 
-.mainDiv > h2
+#mainDiv > h2
 {
     margin: 0%;
     font-Family: "YoungSerif"; 
@@ -76,57 +78,57 @@ body
     color: var(--Brown800);
 }
 
-.mainDiv > p
+#mainDiv > p
 {
     grid-column: 2/3;
     margin: 0%;
     color: var(--Stone900);
 }
 
-.mainDiv > ul
+#mainDiv > ul
 {
     grid-column: 2/3;
     padding-left: 5%;
 }
 
-.mainDiv > ul > li
+#mainDiv > ul > li
 {
     padding-left: 5%;
     color: var(--Stone900);
 }
 
-.mainDiv > ul > li::marker
+#mainDiv > ul > li::marker
 {
     color: var(--Brown800);
 }
 
-.mainDiv > ol
+#mainDiv > ol
 {
     grid-column: 2/3;
     padding-left: 5%;
 }
 
-.mainDiv > ol > li
+#mainDiv > ol > li
 {
     padding-left: 5%;
     color: var(--Stone900);
 }
 
-.mainDiv > ol > li::marker
+#mainDiv > ol > li::marker
 {
     color: var(--Brown800);
 }
 
-.mainDiv > table
+#mainDiv > table
 {
     grid-column: 2/3;
     margin-top: 5%;
 }
 
-.mainDiv > table, tr, td
+#mainDiv > table, tr, td
 {
-    border: 1px solid var(--Stone900);
-    border-collapse: collapse;  
+    border: 1px;
+    border-bottom-style: solid var(--Stone900);
 }
 
 .tableColum1

@@ -8,7 +8,7 @@
     <link rel="icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
-    <div class="mainDiv">
+    <div id="mainDiv">
         <img src="./assets/images/image-omelette.jpeg" alt="Omelette Image" id="omeletteImage">
         <h1>Simple Omelette Recipe</h1>
         <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked for perfection, optionally filled with your own cheese, vegetables, or meats.</p>
@@ -77,7 +77,19 @@
                     }
                 }
                 $num = $_POST["num"];
-                echo compareToHundred($num);
+                if(isset($num))
+                {
+                    echo compareToHundred($num);
+                }
+                else
+                {
+                    echo "<p>Please input a number to compare it to 100.</p>";
+                }
+
+                function d($calories, $carbs, $protein, $fat, $dietApproved)
+                {
+
+                }
             ?>
         </div>
     </div>
