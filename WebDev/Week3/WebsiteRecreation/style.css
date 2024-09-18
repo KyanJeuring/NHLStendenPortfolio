@@ -27,27 +27,22 @@ body
     font-Family: "Outfit"; 
     font-weight: 400, 600, 700;
     font-size: 16px;
+    margin: 5%;
     background-color: var(--Stone100);
-    display: grid;
-    grid-template-columns: 1fr 1.8fr 1fr;
 }
 
 #mainDiv
 {
-    display: grid;
-    grid-template-columns: 5px 1fr 5px;
-    grid-column: 2/3;
+    width: 45%;
     background-color: white;
     border-radius: var(--defaultBorderRadius);
-    padding: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    padding: 2%;
+    margin: 0 auto;
     overflow-wrap: break-word;
 }
 
 #omeletteImage
 {
-    grid-column: 2/3;
     width: 100%;
     border-radius: var(--defaultBorderRadius);
     padding: 0%;
@@ -56,9 +51,6 @@ body
 
 #mainDiv > hr 
 {
-    grid-column: 2/3;
-    height: 1px;
-    width: 100%;
     color: var(--Stone900)
 }
 
@@ -66,7 +58,6 @@ body
 {
     font-Family: "YoungSerif"; 
     font-weight: 400;
-    grid-column: 2/3;
     color: var(--Stone900);
 }
 
@@ -75,20 +66,17 @@ body
     margin: 0%;
     font-Family: "YoungSerif"; 
     font-weight: 400;
-    grid-column: 2/3;   
     color: var(--Brown800);
 }
 
 #mainDiv > p
 {
-    grid-column: 2/3;
     margin: 0%;
     color: var(--Stone900);
 }
 
 #paddingText
 {
-    grid-column: 2/3;
     margin: 0%;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -97,7 +85,6 @@ body
 
 #mainDiv > ul
 {
-    grid-column: 2/3;
     padding-left: 5%;
 }
 
@@ -116,7 +103,6 @@ body
 
 #mainDiv > ol
 {
-    grid-column: 2/3;
     padding-left: 5%;
 }
 
@@ -136,7 +122,7 @@ body
 
 #mainDiv > table
 {
-    grid-column: 2/3;
+    width: 100%;
     border-collapse: collapse;
 }
 
@@ -159,10 +145,6 @@ body
 
 .subDiv
 {
-    grid-column: 2/3;
-    display: grid;
-    grid-template-columns: 5px 1fr 5px;
-    grid-column: 2/3;
     background-color: var(--Rose50);
     border-radius: var(--defaultBorderRadius);
     padding: 5%;
@@ -175,32 +157,23 @@ body
 {
     font-Family: "Outfit"; 
     font-weight: 400;
-    grid-column: 2/3;
     margin: 0%;
     color: var(--Rose800);
 }
 
 .subDiv > p
 {
-    grid-column: 2/3;
     margin: 0%;
     color: var(--Stone900);
 }
 
-.subDiv > form
-{
-    grid-column: 2/3;
-}
-
 .subDiv > ul
 {
-    grid-column: 2/3;
     padding-left: 5%;
 }
 
 .subDiv > ul > li
 {
-    grid-column: 2/3;
     padding-left: 5%;
     padding-top: 1%;
     padding-bottom: 1%;
