@@ -1,0 +1,85 @@
+table
+{
+    margin: 0 auto;
+    margin-top: 2%;
+    width: 15%;
+    border-collapse: collapse;
+    justify-content: center;
+}
+
+th
+{
+    display: flex;
+    align-items: start;
+    margin: 2%;
+}
+
+td
+{
+    margin: 2%;
+}
+
+.tableBottomBorder
+{
+    border-bottom: 1px solid black;
+}
+
+form
+{
+    border: 1px solid black;
+    padding: 1%;
+    margin: 0 auto;
+    width: 30%;
+}
+
+form > #d1
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    width: 75%;
+    row-gap: 1em;
+}
+
+form > #d1 > label
+{
+    display: flex;
+    justify-content: start;
+    width: 75%;
+}
+
+form > #d1 > input
+{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+}
+
+form > #d2
+{
+    display: grid;
+    grid-template-columns: 1fr .2fr 1fr .2fr;
+    margin: 0 auto;
+    width: 30%;
+}
+
+form label
+{
+    margin: 0 auto;
+}
+
+form p
+{
+    margin: 0 auto;
+    padding: 10%;
+    grid-column: 1/5;
+}
+
+form #submit
+{
+    grid-column: 1/5;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 5%;
+    width: 50%;
+}

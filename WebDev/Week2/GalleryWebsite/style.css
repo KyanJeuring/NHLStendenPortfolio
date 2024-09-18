@@ -8,6 +8,17 @@ body
     grid-template-columns: repeat(26, 1fr);
 }
 
+a
+{
+    grid-column: 1/27;
+}
+
+hr
+{
+    grid-column: 1/27;
+    width: 100%;
+}
+
 h1
 {
     grid-column: 1/27;

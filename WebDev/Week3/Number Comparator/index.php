@@ -7,7 +7,9 @@
     <link rel="icon" type="image/x-icon" href="../../../Assets/favicon.ico">
 </head>
 <body>
-    <form action="index.php" METHOD="POST">
+    <a href="../../../WebDev.html">&#60;&#60; Back to WebDev Portfolio</a>
+    <hr>
+    <form action="./index.php" METHOD="POST">
         <label>Number:</label>
         <input type="number" id="num" name="num">
         <input type="submit" value="Submit">
@@ -23,19 +25,14 @@
                 return "<p>The number $num is equal to 100.\n</p>";
             }
         }
-        $num = $_POST["num"];
-        if(isset($num))
+
+        if(isset($_POST["num"]))
         {
-            echo compareToHundred($num);
+            echo compareToHundred($_POST["num"]);
         }
         else
         {
             echo "<p>Please input a number to compare it to 100.</p>";
-        }
-
-        function d($calories, $carbs, $protein, $fat, $dietApproved)
-        {
-
         }
     ?>
 </body>

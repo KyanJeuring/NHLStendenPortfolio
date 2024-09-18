@@ -7,7 +7,10 @@
     <link rel="icon" type="image/x-icon" href="../../../Assets/favicon.ico">
 </head>
 <body>
+    <a href="../../../WebDev.html">&#60;&#60; Back to WebDev Portfolio</a>
+    <hr>
     <?php
+    error_reporting(0);
         $date = 14062016;
         $day = ($date / 1000000) % 31;
         $month = ($date / 10000) % 100;
