@@ -19,6 +19,7 @@ src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
     --Brown800: hsl(14, 45%, 36%);
     --Rose800: hsl(332, 51%, 32%);
     --Rose50: hsl(322.5, 100%, 98.43%);
+    --defaultBorderRadius: 25px;
 }
 
 body
@@ -37,7 +38,7 @@ body
     grid-template-columns: 5px 1fr 5px;
     grid-column: 2/3;
     background-color: white;
-    border-radius: 3%;
+    border-radius: var(--defaultBorderRadius);
     padding: 5%;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -48,7 +49,7 @@ body
 {
     grid-column: 2/3;
     width: 100%;
-    border-radius: 3%;
+    border-radius: var(--defaultBorderRadius);
     padding: 0%;
     margin: 0%;
 }
@@ -163,7 +164,7 @@ body
     grid-template-columns: 5px 1fr 5px;
     grid-column: 2/3;
     background-color: var(--Rose50);
-    border-radius: 3%;
+    border-radius: var(--defaultBorderRadius);
     padding: 5%;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -172,7 +173,7 @@ body
 
 .subDiv > h3
 {
-    font-Family: "YoungSerif"; 
+    font-Family: "Outfit"; 
     font-weight: 400;
     grid-column: 2/3;
     margin: 0%;
