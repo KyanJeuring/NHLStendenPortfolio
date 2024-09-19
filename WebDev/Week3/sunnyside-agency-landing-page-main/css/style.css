@@ -1,0 +1,74 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header{
+    background-image: url(../images/desktop/image-header.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.fullWidth
+{
+    grid-column: 1/3;
+}
+
+section
+{
+    grid-column: span 1;
+    min-height: 60vh;
+}
+
+#eggBG
+{
+    background-image: url(../images/desktop/image-transform.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#drinkBG
+{
+    background-image: url(../images/desktop/image-stand-out.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#cherryBG
+{
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#orangeBG
+{
+    background-image: url(../images/desktop/image-photography.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.flex-gallery
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-gallery img
+{
+    width: 25%;
+}

@@ -35,11 +35,11 @@
         function generateNutrientsList($calories, $carbs, $protein, $fat, $dietApproved)
         {
             echo "<table>";
-            echo "<tr class='tableBottomBorder'><th>Calories:</th><td>$calories kcal</td></tr>";
-            echo "<tr class='tableBottomBorder'><th>Carbs:</th><td>$carbs g</td></tr>";
-            echo "<tr class='tableBottomBorder'><th>Proteins:</th><td>$protein g</td></tr>";
-            echo "<tr class='tableBottomBorder'><th>Fat:</th><td>$fat g</td></tr>";
-            echo "<tr class='tableBottomBorder'><th>Diet status:</th><td>", ($dietApproved ? "Approved" : "Disapproved"), "</td></tr>";
+            echo "<tr class='tableBottomBorder'><td class='td1'>Calories:</td><td class='td2'><strong>$calories kcal</strong></td></tr>";
+            echo "<tr class='tableBottomBorder'><td class='td1'>Carbs:</td><td class='td2'><strong>$carbs g</strong></td></tr>";
+            echo "<tr class='tableBottomBorder'><td class='td1'>Proteins:</td><td class='td2'><strong>$protein g</strong></td></tr>";
+            echo "<tr class='tableBottomBorder'><td class='td1'>Fat:</td><td class='td2'><strong>$fat g</strong></td></tr>";
+            echo "<tr><td class='td1'>Diet status:</td><td class='td2'>", ($dietApproved ? "<strong>Approved</strong>" : "<strong>Disapproved</strong>"), "</td></tr>";
             echo "</table>";
         }
 
