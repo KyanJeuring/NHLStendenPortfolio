@@ -59,7 +59,7 @@ footer > p
 	margin-bottom: 5px;
 }
 
-.grid 
+.flex 
 {
 	grid-column: 2/12;
 	display: flex;
@@ -69,9 +69,9 @@ footer > p
 	flex-wrap: wrap;
 }
 
-.grid > div 
+.flex > div details
 {
-	width: 30%;
+	width: 100%;
 	margin: 1%;
 }
 
