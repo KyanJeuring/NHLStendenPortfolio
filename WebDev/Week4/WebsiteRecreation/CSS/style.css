@@ -1,0 +1,23 @@
+:root
+{
+    --black: hsl(0, 0%, 7%);
+    --white: hsl(0, 0%, 100%);
+    --purple100: hsl(254, 88%, 90%);
+    --purple500: hsl(256, 67%, 59%);
+    --yellow100: HSL(31, 66%, 93%);
+    --yellow500: hsl(39, 100%, 71%);
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url(../assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body
+{
+    font-family: "DM Sans";
+    font-size: 18px;
+}

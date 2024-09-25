@@ -1,0 +1,130 @@
+Basic Introduction:
+
+“I will need to ask you some questions to get a collective idea of what we are going to need to build, and we will be contacting you soon to discuss what can and cannot be included depending on our timeframe.”
+
+Could you tell us a bit about yourself and your professional background?
+What courses do you currently teach?
+
+Sunny Socks: founded a long time ago - mission: make environment friendly and sustainable socks. Started off making environment friendly socks(thanks to global warming etc) 
+
+Motto:  “Making the world more sustainable, one sock at a time”
+
+Purpose and Goals:
+
+What is the main purpose of the website?
+
+Communicating and selling the products via the website, aggressively marketing this website through social media, broaden the customer base through social media
+
+Are there specific goals you want the website to achieve?
+
+Target Audience:
+
+Who is the primary audience for the website?
+
+People who care about the environment but don’t know how to translate this into concrete measures, socially conscious about preserving the environment
+
+How do you want the audience to perceive the website?
+
+Content Requirements:
+
+What kind of content do you plan to host on the website (text, images, videos, etc.)?
+Will you need any special features like blogs, calendars, or forums?
+
+Social media campaigns.
+
+Design Preferences:
+
+Do you have any specific design preferences in terms of colors, layout, or style?
+Are there any websites that you particularly admire or would like to emulate?
+
+Simple layout, very user-friendly, usable for both mobile and desktop
+Social Media accounts must be shown in the footer!
+Functionality and Features:
+
+What key features must be included on the website?
+Are there any interactive elements or sections you envision?
+
+Navigation Bar, Purchase functionality, Donate functionality
+
+Usability:
+
+How important is mobile responsiveness for your website?
+What kind of navigation structure do you envision?
+
+Dropdown navigation bar for mobile and normal navigation bar for desktop
+
+Technical Considerations:
+
+Do you have any specific platform or technology preferences for building the website?
+Will you need multilingual support on the website?
+English only so far
+
+Budget and Resources: (Not in this case)
+
+What is the budget for the website development? get back to us so far
+Are there existing resources (like texts, images, logos) that can be utilized?
+
+In Blackboard
+
+Timeline and Milestones:
+
+What is the timeline for the website project?
+Are there specific milestones or phases of the project you have in mind?
+
+Maintenance and Updates: (SKIP)
+
+Who will be responsible for maintaining and updating the website after it's launched?
+How frequently do you anticipate the website needing updates?
+Communication and Feedback:
+
+How often would you like to receive updates about the project?
+What is your preferred method of communication?
+
+Legal and Accessibility:
+work together with local farmers
+
+Are there any compliance requirements like accessibility or data protection laws that the website must adhere to?
+yes 
+“Sunny Socks on the move”
+Do you foresee needing any legal disclaimers or privacy policies on the site?
+Yes
+
+Domain and Hosting:
+
+Do you already own a domain name, or will you need help acquiring one?
+Do you have a hosting provider in mind or need recommendations?
+
+Performance and Security:
+
+What are your expectations for website load time and performance?
+What security features are essential for you?
+
+SEO and Marketing: (SKIP)
+
+Will search engine optimization (SEO) be a priority for the website?
+Do you plan to integrate any social media or marketing tools? yes
+
+Past Experiences:
+
+Have you previously had a website? What did you like and dislike about it?
+What have been your biggest challenges with online platforms in the past?
+
+Future Vision:
+
+Where do you see this project going in the next 5 years?
+expand globally (Slowly)
+Are there any potential expansions or additional functionalities you might want later?
+
+Decision Making:
+
+Who will be the main point of contact and decision-maker for this project?
+How are decisions typically made in your department or team?
+
+Expectations and Concerns:
+
+What are your biggest concerns regarding this project?
+What do you hope to learn or achieve through this project?
+
+wants to transfer to a new audience one sock at a time.
+add a donate option when purchasing a product
+when choosing a pair of socks, choose which type of wool they would like to use.
