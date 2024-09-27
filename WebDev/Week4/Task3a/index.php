@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Task 2b</title>
+        <title>Task 3a</title>
         <link rel="icon" type="image/x-icon" href="../../../Assets/favicon.ico">
     </head>
     <body>
@@ -23,10 +23,24 @@
             for ($j = 0; $j <= 9; $j++) {
                 echo "*";
             }
+            echo "<br>";
         }
-        echo "<br>";
         echo "Shape 3";
         echo "<br>";
+        for ($i = 0; $i <= 9; $i++) {
+            for ($j = 0; $j <= $i; $j++) {
+                echo "*";
+            }
+            echo "<br>";
+        }
+        echo "Shape ";
+        echo "<br>";
+        for ($i = 9; $i >= 0; $i--) {
+            for ($j = 0; $j <= $i; $j++) {
+                echo "*";
+            }
+            echo "<br>";
+        }
         ?>
     </body>
 </html>
