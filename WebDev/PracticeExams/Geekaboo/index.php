@@ -20,14 +20,43 @@
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </header>
-        <section id="s1">
+        <section id="bs1">
             <h2>Login</h2>
-            <form action="./index.html" METHOD="POST">
+            <?php
+                if($_POST['userType'] == "user")
+                {
+                    if($_POST['email'] != "user@user.com")
+                    {
+                        echo "<p><span class='errorMessage'>The e-mail address is not correct</span></p>";
+                    }
+                    if($_POST['password'] != "user")
+                    {
+                        echo "<p><span class='errorMessage'>The password is not correct</span></p>";
+                    }
+                }
+                elseif($_POST['userType'] == "admin")
+                {
+                    if($_POST['email'] != "admin@admin.com")
+                    {
+                        echo "<p><span class='errorMessage'>The e-mail address is not correct</span></p>";
+                    }
+                    if($_POST['password'] != "admin")
+                    {
+                        echo "<p><span class='errorMessage'>The password given is not correct</span></p>";
+                    }
+                }
+                else
+                {
+                    echo "ttt";
+                }
+                
+            ?>
+            <form action="./index.php" METHOD="POST">
                 <label for="email">Email Address:</label>
-                <input type="email" name="email" class="fullWidth">
+                <input type="email" name="email">
                 <label for="password">Password:</label>
-                <input type="password" name="password" class="fullWidth">
-                <input type="submit" value="Login" id="login" class="fullWidth">
+                <input type="password" name="password">
+                <input type="submit" value="Login" id="submit" name="submit">
                 <div class="radio">
                     <input type="radio" name="userType" id="user" value="user">
                     <label for="userType">User</label>
@@ -38,7 +67,7 @@
                 <a href="#">Register</a>
             </form>
         </section>
-        <section id="s2">
+        <section id="bs2">
             <h2>Browsers</h2>
             <p>We create websites for:</p>
             <div class="browserImages">
@@ -50,27 +79,32 @@
             </div>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,</p>
         </section>
-        <section id="s3">
+        <section id="bs3">
             <h2>Welcome at Geekabboo</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
+            <p>Lorem ipsum dobr sit amet, consectetuer adipisang dt. Aenean commodo bgula eget dolor. Aenean massa. Cum socis natoque penatibus et magns dis partunent montes, nascetur ridiculus mus. Donec quam feis, uttriöes nec, pekntesque eu, pretum qus, sem. Nula consequat massa quis enim. Donec pede justo, fringla velt abquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nulam dictum felts eu pede mob pretium. Integer tjnödunt. Cras dapibus. Wamus ekmentum semper nsi. Aenean vulputate defend telus. Aenean Jeo bgula, porttitor eu, consequat vitae, ekfend ac, enim. Abquam brem ante, dapibus in, viverra quis, feugiat a, telus. Phaselus vverra nula ut metus varius horeet.</p>
         </section>
         <footer>
-            <section>
-                <h3>Info about Geekabboo</h3>
-                <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-            </section>
-            <section>
-                <h3>Service at Geekabboo</h3>
-                <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-            </section>
-            <section>
-                <h3>More about Geekabboo</h3>
-                <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-            </section>
-            <section>
-                <h3>Warrenty at Geekabboo</h3>
-                <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-            </section>
+            <div id="fd1">
+                <section>
+                    <h3>Info about Geekabboo</h3>
+                    <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+                </section>
+                <section>
+                    <h3>Service at Geekabboo</h3>
+                    <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+                </section>
+                <section>
+                    <h3>More about Geekabboo</h3>
+                    <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+                </section>
+                <section>
+                    <h3>Warrenty at Geekabboo</h3>
+                    <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+                </section>
+            </div>
+            <div id="fd2">
+                <p>&#169; Geekabboo 2023</p>
+            </div>
         </footer>
     </main>
 </body>
