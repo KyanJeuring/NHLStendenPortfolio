@@ -23,33 +23,32 @@
         <section id="bs1">
             <h2>Login</h2>
             <?php
-                if($_POST['userType'] == "user")
+                function credentialCheck()
                 {
-                    if($_POST['email'] != "user@user.com")
+                    if($_POST['userType'] == "user")
                     {
-                        echo "<p><span class='errorMessage'>The e-mail address is not correct</span></p>";
+                        if($_POST['email'] != "user@user.com")
+                        {
+                            echo "<p><span class='errorMessage'>The e-mail address is not correct</span></p>";
+                        }
+                        if($_POST['password'] != "user")
+                        {
+                            echo "<p><span class='errorMessage'>The password is not correct</span></p>";
+                        }
                     }
-                    if($_POST['password'] != "user")
+                    elseif($_POST['userType'] == "admin")
                     {
-                        echo "<p><span class='errorMessage'>The password is not correct</span></p>";
+                        if($_POST['email'] != "admin@admin.com")
+                        {
+                            echo "<p><span class='errorMessage'>The e-mail address is not correct</span></p>";
+                        }
+                        if($_POST['password'] != "admin")
+                        {
+                            echo "<p><span class='errorMessage'>The password given is not correct</span></p>";
+                        }
                     }
                 }
-                elseif($_POST['userType'] == "admin")
-                {
-                    if($_POST['email'] != "admin@admin.com")
-                    {
-                        echo "<p><span class='errorMessage'>The e-mail address is not correct</span></p>";
-                    }
-                    if($_POST['password'] != "admin")
-                    {
-                        echo "<p><span class='errorMessage'>The password given is not correct</span></p>";
-                    }
-                }
-                else
-                {
-                    echo "ttt";
-                }
-                
+                credentialCheck();
             ?>
             <form action="./index.php" METHOD="POST">
                 <label for="email">Email Address:</label>
