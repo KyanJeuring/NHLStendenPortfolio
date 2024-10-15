@@ -1,0 +1,9 @@
+.hideOnLogin
+{
+    display: none;
+}
+
+.showOnLogin
+{
+    display: block;
+}
