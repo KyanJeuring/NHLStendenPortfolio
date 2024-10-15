@@ -179,3 +179,8 @@ footer > #fd2 > p
     font-weight: bold;
     color: #ff0000;
 }
+
+.welcomeMessage
+{
+    color: var(--redHeading);
+}

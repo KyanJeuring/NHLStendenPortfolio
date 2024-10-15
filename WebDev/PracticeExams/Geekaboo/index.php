@@ -21,36 +21,75 @@
             </ul>
         </header>
         <section id="bs1">
-            <h2>Login</h2>
+            <h2 class="hideOnLogin">Login</h2>
             <?php
-                function credentialCheck()
+                $cssFile = "./CSS/hideShow.css";
+                if ($_SERVER['REQUEST_METHOD'] == 'POST')
                 {
-                    if($_POST['userType'] == "user")
+                    $uType = filter_input(INPUT_POST, 'userType');
+                    $uEmail = strtolower(filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL));
+                    $uPass = filter_input(INPUT_POST, 'password');
+
+                    function getUsernameFromEmail($uEmail)
                     {
-                        if($_POST['email'] != "user@user.com")
-                        {
-                            echo "<p><span class='errorMessage'>The e-mail address is not correct</span></p>";
-                        }
-                        if($_POST['password'] != "user")
-                        {
-                            echo "<p><span class='errorMessage'>The password is not correct</span></p>";
-                        }
+                        $parts = explode("@", $uEmail);
+                        return $parts[0];
                     }
-                    elseif($_POST['userType'] == "admin")
+
+                    $uName = getUsernameFromEmail($uEmail);
+                    $uName = ucfirst($uName);
+                    $uName[strlen($uName) - 1] = strtoupper($uName[strlen($uName) - 1]);
+
+                    if(empty($uType))
                     {
-                        if($_POST['email'] != "admin@admin.com")
+                        echo "<p><span class='errorMessage'>Please select an user type!</span></p>";
+                    }
+                    if(empty($uEmail))
+                    {
+                        echo "<p><span class='errorMessage'>Please provide an email!</span></p>";
+                    }
+                    if(empty($uPass))
+                    {
+                        echo "<p><span class='errorMessage'>Please provide an password!</span></p>";
+                    }
+                    else
+                    {
+                        if($uType == "user")
                         {
-                            echo "<p><span class='errorMessage'>The e-mail address is not correct</span></p>";
+                            if($uEmail != "user@user.com")
+                            {
+                                echo "<p><span class='errorMessage'>The e-mail address is not correct</span></p>";
+                            }
+                            if($uPass != "user")
+                            {
+                                echo "<p><span class='errorMessage'>The password is not correct</span></p>";
+                            }
+                            else
+                            {
+                                echo "<h2 class='welcomeMessage'>Welcome, ". $uName . "</h2>";
+                                echo "<link rel='stylesheet' href='" . $cssFile . "'>";
+                            }
                         }
-                        if($_POST['password'] != "admin")
+                        elseif($uType == "admin")
                         {
-                            echo "<p><span class='errorMessage'>The password given is not correct</span></p>";
+                            if($uEmail != "admin@admin.com")
+                            {
+                                echo "<p><span class='errorMessage'>The e-mail address is not correct</span></p>";
+                            }
+                            if($uPass != "admin")
+                            {
+                                echo "<p><span class='errorMessage'>The password given is not correct</span></p>";
+                            }
+                            else
+                            {
+                                echo "<h2 class='welcomeMessage'>Welcome, ". $uName . "</h2>";
+                                echo "<link rel='stylesheet' href='" . $cssFile . "'>";
+                            }
                         }
                     }
                 }
-                credentialCheck();
             ?>
-            <form action="./index.php" METHOD="POST">
+            <form action="./index.php" METHOD="POST" class="hideOnLogin">
                 <label for="email">Email Address:</label>
                 <input type="email" name="email">
                 <label for="password">Password:</label>
@@ -70,11 +109,13 @@
             <h2>Browsers</h2>
             <p>We create websites for:</p>
             <div class="browserImages">
-                <img src="./Assets/ff.png" alt="Firefox">
-                <img src="./Assets/ie.png" alt="Internet Explorer">
-                <img src="./Assets/opera.png" alt="Opera">
-                <img src="./Assets/safari.png" alt="Safari">
-                <img src="./Assets/netscape.png" alt="Netscape">
+                <?php
+                $browserType = array("ff", "ie", "opera", "safari", "netscape");
+                foreach($browserType as $browser)
+                {
+                    echo "<img src='./Assets/" . $browser . ".png' alt='". $browser. "'/>";
+                }
+                ?>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,</p>
         </section>
