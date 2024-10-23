@@ -13,6 +13,7 @@
 body
 {
     background-color: var(--greyBackground);
+    min-height: 110vh;
 }
 
 main
@@ -81,6 +82,11 @@ main > section
 #bs1 > h2
 {
     color: var(--redHeading);
+}
+
+#bs1 input[type="submit"]
+{
+    margin-top: 8%;
 }
 
 #bs2
