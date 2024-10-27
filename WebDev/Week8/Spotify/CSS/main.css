@@ -1,0 +1,369 @@
+html
+{
+    height: 100%;
+}
+
+:root
+{
+    --defaultGrey: #B3B3B3;
+    --backgroundBlack: #000;
+    --black1: #202020;
+    --black2: #121212;
+    --spotifyPurple: #af2997;
+    --spotifyBlue: #519bf5;
+    --fallback-fonts: Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic ProN, Meiryo, MS Gothic;
+    --encore-body-font-stack: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif);
+}
+
+body
+{
+    font-family: var(--encore-body-font-stack);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;
+    font-size: 14px;
+}
+
+main
+{
+    padding-inline: 0.5em;
+    cursor: default;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 1em;
+    background-color: var(--backgroundBlack);
+}
+
+button, img
+{
+    cursor: pointer;
+}
+
+button
+{
+    display: inline-flex;
+    align-items: center;
+    width: max-content;
+    border-radius: 5em;
+    border: none;
+    padding: 0.8em 1em 0.8em 1em;
+}
+
+header, footer
+{
+    display: inline-flex;
+    justify-content: space-between;
+    grid-column: 1 / 3;
+    height: 6vh;
+    padding: 0.5em 1em;
+}
+
+header div
+{
+    display: inline-flex;
+    align-items: center;
+}
+
+header #left
+{
+    justify-content: left;
+}
+
+header #center
+{
+    justify-content: center;
+    margin-inline: 10em 0em;
+}
+
+header #right
+{
+    justify-content: right;
+}
+
+#spotifyLogo
+{
+    padding-inline: 0 1em;
+}
+
+#center > div
+{
+    display: inline-flex;
+    margin-inline: 0.5em;
+    background-color: var(--black1);
+}
+
+#center #homeIcon
+{
+    padding: 1em;
+    border-radius: 5em;
+}
+
+#search
+{
+    justify-content: space-between;
+    width: 30em;
+    padding: 0.8em;
+    border-radius: 5em;
+    border: none;
+}
+
+#search:hover
+{
+    border: 2px solid #fff;
+}
+
+#search input
+{
+    padding-inline: 1em;
+    border: transparent;
+    background-color: transparent;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+#search input:focus
+{
+    outline: none;
+}
+
+#search #searchVerticalLine
+{
+    height: 2em;
+    margin-inline: 1em;
+    border-right: 1px solid var(--defaultGrey);
+}
+
+#right button
+{
+    padding: 0.1em 2em;
+    font-weight: bold;
+}
+
+
+#right #signupBtn
+{
+    background-color: var(--backgroundBlack);
+    border: none;
+    color: var(--defaultGrey);
+}
+
+#right #loginBtn
+{
+    border: none;
+    background-color: #fff;
+    color: var(--backgroundBlack);
+}
+
+aside
+{
+    padding: 1em;
+    grid-column: 1 /2;
+    background-color: var(--black2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#asideHeader
+{
+    margin-block: 0em 1.5em;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--defaultGrey);
+    height: 5vh;
+}
+
+#asideHeader > div
+{
+    cursor: pointer;
+    display: inline-flex;
+}
+
+
+aside .asideContent
+{
+    padding: 1em;
+    margin-block: 1em;
+    border-radius: 0.5em;
+    height: max-content;
+    background: var(--black1);
+}
+
+aside img
+{
+    display: flex;
+    padding-inline: 0.5em 1em;
+}
+
+#asideMaliciousContent
+{
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    color: var(--defaultGrey);
+}
+#asideMaliciousContent > div
+{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 75%;
+}
+
+#asideMaliciousContent .normalLink
+{
+    margin: 1em 1em 0em 0em;
+    font-size: 11px;
+    color: var(--defaultGrey);
+    text-decoration: none;
+}
+
+#asideMaliciousContent .normalLink:hover
+{
+    text-decoration: underline;
+}
+
+.specialLink
+{
+    margin-block: 1em;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.specialLink:hover
+{
+    text-decoration: underline;
+}
+
+#asideMaliciousContent button
+{
+    margin-block: 1.5em;
+    border: 1px solid #fff;
+    background-color: var(--black2);
+    color: #fff;
+}
+
+#asideMaliciousContent button > img
+{
+    padding-inline: 0 0.5em;
+}
+
+aside h2, aside h3, aside h4, aside p
+{
+    padding: 0;
+    margin-block: 1em;
+}
+
+aside button
+{
+    color: #000;
+    font-weight: bold;
+    border: none;
+}
+
+#content
+{
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 /3;
+    gap: 2em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-color: transparent transparent;
+    scroll-behavior: smooth;
+    background: linear-gradient(180deg, var(--black1) 0%, var(--black2) 50%);
+}
+
+#content:hover
+{
+    scrollbar-color: var(--defaultGrey) transparent;
+}
+
+#content > div
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em 2em 2em;
+}
+
+.contentHeader
+{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.contentHeader h2
+{
+    display: flex;
+    margin: 0 0 1em 0;
+    justify-items: center;
+}
+
+.carousel
+{
+    display: inline-flex;
+    justify-content: left;
+}
+
+.cards
+{
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    cursor: pointer;
+    border-radius: 2em;
+    margin-inline: 0.8em;
+    width: min-content;
+}
+
+.cards h3, .cards p
+{
+    padding: 0;
+    margin-block: 0.5em;
+}
+
+.cards p
+{
+    color: var(--defaultGrey);
+}
+
+.cards h3:hover
+{
+    text-decoration: underline;
+}
+
+.pictures
+{
+    border-radius: 0.5em;
+    background-image: url(../Assets/imageNotFound.png);
+    background-position: center;
+    background-size: cover;
+    height: 10em;
+    width: 10em;
+}
+
+.circle
+{
+    border-radius: 5em;
+}
+
+footer
+{
+    margin-block: 0.5em;
+    background: linear-gradient(90deg, var(--spotifyPurple) 0%, var(--spotifyBlue) 100%);
+}
+footer h4, footer p
+{
+    margin-block: 0.5em;
+}
+
+footer button
+{
+    padding: 0.5em 2.5em 0.5em 2.5em;
+}
