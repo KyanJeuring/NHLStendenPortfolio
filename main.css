@@ -11,12 +11,6 @@
 	padding: 0;
 }
 
-body 
-{
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-}
-
 h1 
 {
 	font-family: sans-serif;
@@ -52,7 +46,6 @@ footer > p
 
 .mainTitle
 {
-	grid-column: 1/13;
 	font-size: 48px;
 	font-weight: bolder;
 	margin-top: 5px;
@@ -61,7 +54,6 @@ footer > p
 
 .flex 
 {
-	grid-column: 2/12;
 	display: flex;
 	flex-direction: row;
 	gap: 1em;
