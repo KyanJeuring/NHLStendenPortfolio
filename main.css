@@ -25,7 +25,6 @@ p
 
 .headerFooterStyle 
 {
-	grid-column: 1/13;
 	background-color: var(--primaryColor);
 }
 
@@ -54,8 +53,7 @@ footer > p
 
 .flex 
 {
-	display: flex;
-	flex-direction: row;
+	display: inline-flex;
 	gap: 1em;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
