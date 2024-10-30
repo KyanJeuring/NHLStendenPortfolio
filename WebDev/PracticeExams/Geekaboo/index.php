@@ -27,7 +27,7 @@
             $uNameModified[strlen($uNameModified) - 1] = strtoupper($uNameModified[strlen($uNameModified) - 1]);
         }
     ?>
-    <a href="../../../WebDev.html">&#60;&#60; Back to WebDev Portfolio</a>
+    <a href="../../../WebDev.php">&#60;&#60; Back to WebDev Portfolio</a>
     <hr>
     <main>
         <header>
