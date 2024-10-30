@@ -51,22 +51,30 @@ footer > p
 	margin-bottom: 5px;
 }
 
-.flex 
+main
 {
 	display: inline-flex;
-	gap: 1em;
-	justify-content: space-evenly;
 	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100vw;
 }
 
-.flex > div details
+main > div
 {
-	width: 100%;
-	margin: 1%;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	width: calc(100vw / 3);
+}
+
+details 
+{
+	margin-inline: 5rem 0;
 }
 
 div ul 
 {
+	margin-inline: 5rem;
 	list-style-type: none;
 	padding: 0%;
 	margin: 0%;

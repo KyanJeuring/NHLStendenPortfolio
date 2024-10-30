@@ -7,7 +7,7 @@
         <link rel="icon" type="image/x-icon" href="../../../Assets/favicon.ico">
     </head>
     <body>
-        <a href="../../../WebDev.html">&#60;&#60; Back to WebDev Portfolio</a>
+        <a href="../../../WebDev.php">&#60;&#60; Back to WebDev Portfolio</a>
         <hr>
         <?php
         $areacodes = array(14, 26, 12, 58, 34, 66, 7, 4);
