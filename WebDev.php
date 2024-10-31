@@ -65,6 +65,10 @@
                             "Task 3b" => "./WebDev/Week4/Task3b/index.php",
                             "Task 3c" => "./WebDev/Week4/Task3c/index.php"
                         ],
+                    "Week 5" =>
+                        [
+                            "Webinar Subscription" => "./WebDev/Week5/WebinarSubscription/index.php"
+                        ],
                     "Week 6" =>
                         [
                             "Formy" => "./WebDev/Week6/formy/mylittleformy.php"
@@ -92,7 +96,7 @@
         <div>
             <h1>Practice Exams</h1>
             <ul>
-                <li><a href="./WebDev/PracticeExams/Geekaboo/index.php">Geekabboo</a></li>
+                <li><a href="./WebDev/PracticeExams/Geekaboo/index.php">Geekaboo</a></li>
             </ul>
         </div>
         <div>
