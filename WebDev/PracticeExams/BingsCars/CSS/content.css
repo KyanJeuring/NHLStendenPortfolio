@@ -14,8 +14,7 @@ header
 
 header > div
 {
-    margin: 5vh auto;
-    height: max-content;
+    padding: 2rem;
 }
 
 header div h1

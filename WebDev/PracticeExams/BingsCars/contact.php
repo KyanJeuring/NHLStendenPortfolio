@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bing&apos;s Cars™</title>
+    <title>Bing&apos;s Cars&trade;</title>
     <link rel="stylesheet" href="./CSS/main.css" type="text/css">
     <link rel="stylesheet" href="./CSS/form.css" type="text/css">
     <link rel="stylesheet" href="./CSS/content.css" type="text/css">
@@ -18,10 +18,14 @@
             <div>
                 <ul>
                     <?php
-                        $menuTexts = array("Home" => "./index.php", "Most hired cars" => "#", "Contact" => "./contact.php");
-                        foreach($menuTexts as $item => $link)
+                        $menuTexts = array("Home", "Most hired cars", "Contact");
+                        $menuLinks = array("./index.php", "#", "./contact.php");
+                        if (count($menuTexts) == count($menuLinks))
                         {
-                            echo "<li><a href='$link'>$item</a><li>";
+                            for($i = 0; $i < count($menuTexts); $i++)
+                            {
+                                echo "<li><a href='".$menuLinks[$i]."'>".$menuTexts[$i]."</a><li>";
+                            }
                         }
                     ?>
                 </ul>
