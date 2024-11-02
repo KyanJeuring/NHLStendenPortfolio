@@ -1,0 +1,66 @@
+form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form select
+{
+    padding: 0.5rem;
+}
+
+form textarea
+{
+    resize: none;
+    height: 10vh;
+    padding: 1rem;
+}
+
+#selects
+{
+    display: inline-flex;
+    gap: 0.5rem;
+}
+
+select
+{
+    width: 100%;
+}
+
+label
+{
+    margin-block: 1rem 0;
+}
+
+#insuranceLabel
+{
+    margin-block: 1rem 0;
+    width: fit-content;
+    background-color: #b0b0b0;
+    color: #fff;
+}
+
+#submit
+{
+    width: fit-content;
+    padding: 0.5rem;
+    border: none;
+    background-color: #008100;
+    color: #fff;
+    margin-block: 1rem;
+}
+
+.errorMessage
+{
+    color: red;
+}
+
+#overview
+{
+    font-family: monospace;
+}
+
+#overview p
+{
+    margin: 0;
+}

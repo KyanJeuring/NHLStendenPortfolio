@@ -96,7 +96,18 @@
         <div>
             <h1>Practice Exams</h1>
             <ul>
-                <li><a href="./WebDev/PracticeExams/Geekaboo/index.php">Geekaboo</a></li>
+                <?php
+                    $practiceExams = 
+                    [
+                        "Geekaboo" => "./WebDev/PracticeExams/Geekaboo/index.php",
+                        "Bing&apos;s Cars" => "./WebDev/PracticeExams/BingsCars/index.php"
+                    ];
+
+                    foreach ($practiceExams as $title => $link)
+                    {
+                        echo "<li><a href='$link'>$title</a></li>";
+                    }
+                ?>
             </ul>
         </div>
         <div>

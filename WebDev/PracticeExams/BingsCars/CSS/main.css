@@ -1,0 +1,87 @@
+:root
+{
+    --companyBlue: #34495e;
+    --companyGray: #bdc3c7;
+}
+
+body
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Segoe UI, Arial, sans-serif;
+    font-size: 1rem;
+    color: #000;
+    background-color: #f3f3f3;
+}
+main
+{
+    width: 1024px;
+    margin: 1rem auto;
+    background-color: #fff;
+}
+
+nav
+{
+    display: inline-flex;
+    height: 115px;
+    justify-content: space-between;
+    background-color: var(--companyBlue);
+    width: 100%;
+}
+
+nav > div
+{
+    display: inline-flex;
+    padding: 1rem;
+    justify-items: center;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+li
+{
+    display: inline-flex;
+    justify-items: center;
+}
+
+li a
+{
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+}
+
+li a:hover
+{
+    background-color: #fff;
+    color: var(--companyBlue);
+}
+
+footer
+{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: var(--companyGray);
+    color: #fff;
+}
+
+footer a
+{
+    color: #000;
+}
+
+footer > div
+{
+    padding: 2rem;
+}
+
+#openingTimes
+{
+    text-align: right;
+}
