@@ -42,8 +42,7 @@
             <hr>
             <div id="showCase">
                 <?php
-                    for($i = 0; $i <= 5; $i++)
-                    {
+                    for($i = 0; $i <= 5; $i++):
                 ?>
                     <div class="item">
                         <img src="./Assets/car1.png" alt="car">
@@ -52,7 +51,7 @@
                         <p>Beautiful car that can last for years to come.</p>
                     </div>
                 <?php
-                    }
+                    endfor;
                 ?>
             </div>
             <h1>Who is Bing Cars?</h1>
