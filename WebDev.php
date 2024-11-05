@@ -26,58 +26,59 @@
         <div>
         <h1>Weekly Assignments</h1>
             <?php
-                $weeks = [
+                $weeks =
+                [
                     "Week 1" => 
-                        [
-                            "Demo Website" => "./WebDev/Week1/demo/index.php",
-                            "BridgesCanals 1" => "./WebDev/Week1/Example 1/index.html",
-                            "BridgesCanals 2" => "./WebDev/Week1/Example 2/index.html",
-                            "BridgesCanals 3" => "./WebDev/Week1/Example 3/index.html",
-                            "Find The Mistakes" => "./WebDev/Week1/FindTheMistakes/index.php",
-                            "Number Sets" => "./WebDev/Week1/NumSets/index.php",
-                            "Van Winteren" => "./WebDev/Week1/VanWinteren/index.php",
-                            "Variable Switch" => "./WebDev/Week1/VarSwitch/index.php"
-                        ],
+                    [
+                        "Demo Website" => "./WebDev/Week1/demo/index.php",
+                        "BridgesCanals 1" => "./WebDev/Week1/Example 1/index.html",
+                        "BridgesCanals 2" => "./WebDev/Week1/Example 2/index.html",
+                        "BridgesCanals 3" => "./WebDev/Week1/Example 3/index.html",
+                        "Find The Mistakes" => "./WebDev/Week1/FindTheMistakes/index.php",
+                        "Number Sets" => "./WebDev/Week1/NumSets/index.php",
+                        "Van Winteren" => "./WebDev/Week1/VanWinteren/index.php",
+                        "Variable Switch" => "./WebDev/Week1/VarSwitch/index.php"
+                    ],
                     "Week 2" =>
-                        [
-                            "Mondriaan" => "./WebDev/Week2/Mondriaan/index.html",
-                            "Gallery Website" => "./WebDev/Week2/GalleryWebsite/index.html",
-                            "Date Calculation" => "./WebDev/Week2/DateCalculation/index.php",
-                            "Grading Table" => "./WebDev/Week2/GradingTable/index.php"
-                        ],
+                    [
+                        "Mondriaan" => "./WebDev/Week2/Mondriaan/index.html",
+                        "Gallery Website" => "./WebDev/Week2/GalleryWebsite/index.html",
+                        "Date Calculation" => "./WebDev/Week2/DateCalculation/index.php",
+                        "Grading Table" => "./WebDev/Week2/GradingTable/index.php"
+                    ],
                     "Week 3" =>
-                        [
-                            "Website Recreation" => "./WebDev/Week3/WebsiteRecreation/index.html",
-                            "Number Comparator" => "./WebDev/Week3/Number Comparator/index.php",
-                            "Nutrient List" => "./WebDev/Week3/Nutrient List/index.php",
-                            "Video Store" => "./WebDev/Week3/Video Store/index.php",
-                            "Sunny Side Agency" => "./WebDev/Week3/SSA/index.html"
-                        ],
+                    [
+                        "Website Recreation" => "./WebDev/Week3/WebsiteRecreation/index.html",
+                        "Number Comparator" => "./WebDev/Week3/Number Comparator/index.php",
+                        "Nutrient List" => "./WebDev/Week3/Nutrient List/index.php",
+                        "Video Store" => "./WebDev/Week3/Video Store/index.php",
+                        "Sunny Side Agency" => "./WebDev/Week3/SSA/index.html"
+                    ],
                     "Week 4" =>
-                        [
-                            "Website Recreation" => "./WebDev/Week4/WebsiteRecreation/index.html",
-                            "Task 1a" => "./WebDev/Week4/Task1a/index.php",
-                            "Task 1b" => "./WebDev/Week4/Task1b/index.php",
-                            "Task 1c" => "./WebDev/Week4/Task1c/index.php",
-                            "Task 2a" => "./WebDev/Week4/Task2a/index.php",
-                            "Task 2b" => "./WebDev/Week4/Task2b/index.php",
-                            "Task 3a" => "./WebDev/Week4/Task3a/index.php",
-                            "Task 3b" => "./WebDev/Week4/Task3b/index.php",
-                            "Task 3c" => "./WebDev/Week4/Task3c/index.php"
-                        ],
+                    [
+                        "Website Recreation" => "./WebDev/Week4/WebsiteRecreation/index.html",
+                        "Task 1a" => "./WebDev/Week4/Task1a/index.php",
+                        "Task 1b" => "./WebDev/Week4/Task1b/index.php",
+                        "Task 1c" => "./WebDev/Week4/Task1c/index.php",
+                        "Task 2a" => "./WebDev/Week4/Task2a/index.php",
+                        "Task 2b" => "./WebDev/Week4/Task2b/index.php",
+                        "Task 3a" => "./WebDev/Week4/Task3a/index.php",
+                        "Task 3b" => "./WebDev/Week4/Task3b/index.php",
+                        "Task 3c" => "./WebDev/Week4/Task3c/index.php"
+                    ],
                     "Week 5" =>
-                        [
-                            "Webinar Subscription" => "./WebDev/Week5/WebinarSubscription/index.php"
-                        ],
+                    [
+                        "Webinar Subscription" => "./WebDev/Week5/WebinarSubscription/index.php"
+                    ],
                     "Week 6" =>
-                        [
-                            "Formy" => "./WebDev/Week6/formy/mylittleformy.php"
-                        ],
+                    [
+                        "Formy" => "./WebDev/Week6/formy/mylittleformy.php"
+                    ],
                     "Week 8" =>
-                        [
-                            "Spotify" => "./WebDev/Week8/Spotify/index.php"
-                        ]
-                    ];
+                    [
+                        "Spotify" => "./WebDev/Week8/Spotify/index.php"
+                    ]
+                ];
 
                 foreach ($weeks as $week => $assignments)
                 {
