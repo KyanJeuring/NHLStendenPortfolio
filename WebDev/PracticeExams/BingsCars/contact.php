@@ -32,10 +32,8 @@
             </div>
         </nav>
         <header>
-            <div>
-                <h1>Bing&apos;s Cars</h1>
-                <h2>For all your special cars</h2>
-            </div>
+            <h1>Bing&apos;s Cars</h1>
+            <h2>For all your special cars</h2>
         </header>
         <div id="content">
             <?php

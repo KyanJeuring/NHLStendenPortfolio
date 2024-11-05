@@ -32,17 +32,16 @@
             </div>
         </nav>
         <header>
-            <div>
-                <h1>Bing&apos;s Cars</h1>
-                <h2>For all your special cars</h2>
-            </div>
+            <h1>Bing&apos;s Cars</h1>
+            <h2>For all your special cars</h2>
         </header>
         <div id="content">
             <h1 class="blue">Pick one of our popular cars!</h1>
             <hr>
             <div id="showCase">
                 <?php
-                    for($i = 0; $i <= 5; $i++):
+                    for($i = 0; $i < 6; $i++)
+                    {
                 ?>
                     <div class="item">
                         <img src="./Assets/car1.png" alt="car">
@@ -51,7 +50,7 @@
                         <p>Beautiful car that can last for years to come.</p>
                     </div>
                 <?php
-                    endfor;
+                    }
                 ?>
             </div>
             <h1>Who is Bing Cars?</h1>
