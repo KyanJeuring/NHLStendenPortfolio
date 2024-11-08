@@ -1,7 +1,7 @@
 :root 
 {
-	--primaryColor: #ff7700;
-	--activeButtonColor: #d06400;
+	--primaryColor: 255, 119, 0;
+	--activeButtonColor: 208, 100, 0;
 }
 
 *
@@ -25,7 +25,7 @@ p
 
 .headerFooterStyle 
 {
-	background-color: var(--primaryColor);
+	background-color: rgb(var(--primaryColor));
 }
 
 footer 
