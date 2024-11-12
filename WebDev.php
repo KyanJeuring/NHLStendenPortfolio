@@ -15,6 +15,7 @@
         <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./WebDev.php" class="active">WebDev</a></li>
+            <li><a href="./DatabaseEngineering.php">Database Engineering</a></li>
             <li><a href="./ProfessionalSkills.html">Professional Skills</a></li>
             <li><a href="./Projects.html">Projects</a></li>
         </ul>
