@@ -31,7 +31,10 @@
                 [
                     "Week 1" => 
                     [
-                        "Assignments" => "./DatabaseEngineering/Week1/Assignments.txt",
+                        "Assignment 1" => "./DatabaseEngineering/Week1/A1.txt",
+                        "Assignment 2" => "./DatabaseEngineering/Week1/A2.txt",
+                        "Assignment 3" => "./DatabaseEngineering/Week1/A3.txt",
+                        "Assignment 4" => "./DatabaseEngineering/Week1/A4.txt",
                     ]
                 ];
 
