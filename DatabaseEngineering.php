@@ -35,6 +35,7 @@
                         "Assignment 2" => "./DatabaseEngineering/Week1/A2.txt",
                         "Assignment 3" => "./DatabaseEngineering/Week1/A3.txt",
                         "Assignment 4" => "./DatabaseEngineering/Week1/A4.txt",
+                        "PHP Assignment 1" => "./DatabaseEngineering/Week1/A1.php"
                     ]
                 ];
 
