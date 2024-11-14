@@ -39,6 +39,7 @@
         <summary>1.6:</summary>
         <div class="detailsContent">
             <p><strong>Question: </strong>Give an example of two related tables other than the example used in this book. Use the STUDENT and GRADE tables in Figure 1-5 as an example pattern for your tables. Name the tables and columns using the conventions in this book.</p>
+            <p><strong>Answer: </strong></p>
             <div class="tables">
                 <table class="tableRed">
                     <caption>Employees</caption>
@@ -77,49 +78,135 @@
                     </tr>
                 </table>
             </div>
-            <p><strong>Answer: </strong>In the table EMPLOYEES, the EmployeeID serves as the primary key while in the table SALARIES, the EmployeeID serves as an foreign key. This is the relation between the tables EMPLOYEES and SALARIES.</p>
         </div>
     </details>
     <details>
         <summary>1.7:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>For the tables you created in Review Question 1.6, what are the primary keys of each table? Do you think that any of these primary keys could be surrogate keys? Are any of these primary keys composite keys?</p>
+            <p><strong>Answer: </strong>In the table EMPLOYEES, the EmployeeID serves as the primary key and can be a surrogate key while in the table SALARIES, the EmployeeID serves as an foreign key. In the SALARIES table the SalaryID serves as the primary key.</p>
         </div>
     </details>
     <details>
         <summary>1.8:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Explain how the two tables you provided in Review Question 1.6 are related. Which table contains the foreign key, and what is the foreign key?</p>
+            <p><strong>Answer: </strong> The tables are related to each other by the EmployeeID. In the SALARIES table the EmployeeID is the foreign key.</p>
         </div>
     </details>
     <details>
         <summary>1.9:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
+            <p><strong>Question: </strong>Show your two tables from Review Question 1.6 without the columns that represent the relationships. Explain how the value of your two tables is diminished without the relationships</p>
             <p><strong>Answer: </strong></p>
+            <div class="tables">
+                <table class="tableRed">
+                    <caption>Employees</caption>
+                    <tr>
+                        <td>FirstName</td>
+                        <td>LastName</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Doe</td>
+                    </tr>
+                </table>
+                <table class="tableBlue">
+                    <caption>Salaries</caption>
+                    <tr>
+                        <td>SalaryID</td>
+                        <td>Amount</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>&euro;2600</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>&euro;2600</td>
+                    </tr>
+                </table>
+            </div>
+            <p>The value of the two tables are gone because there is no relationships between the two tables. You have a SalaryID and an amount but you don&apos;t know who the amount is assigned to.</p>
         </div>
     </details>
     <details>
         <summary>1.10:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>How do databases create information?</p>
+            <p><strong>Answer: </strong>Databases create information because the data inside the database are recorded as facts and figures.</p>
         </div>
     </details>
     <details>
         <summary>1.11:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Give an example of information that could be determined using the two tables you provided in your answer to Review Question 1.6.</p>
+            <p><strong>Answer: </strong> Using the two tables, you can determine the salary of each employee. For example, John Doe has a salary of €2600, and Jane Doe also has a salary of €2600.</p>
         </div>
     </details>
     <details>
         <summary>1.12:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
+            <p><strong>Question: </strong>Give examples of a single-user database application and a multiuser database application other than the ones shown in Figure 1-7.</p>
             <p><strong>Answer: </strong></p>
+            <div class="tables">
+                <table class="tableGreen">
+                    <caption>Departments</caption>
+                    <tr>
+                        <td>DepartmentID</td>
+                        <td>DepartmentName</td>
+                        <td>Manager</td>
+                        <td>Employees</td>
+                        <td>Location</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Human Resources</td>
+                        <td>John Smith</td>
+                        <td>35</td>
+                        <td>Building A</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Finance</td>
+                        <td>Jane Doe</td>
+                        <td>25</td>
+                        <td>Building B</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>IT</td>
+                        <td>Michael Johnson</td>
+                        <td>45</td>
+                        <td>Building C</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Marketing</td>
+                        <td>Emily Brown</td>
+                        <td>30</td>
+                        <td>Building D</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Sales</td>
+                        <td>David White</td>
+                        <td>40</td>
+                        <td>Building E</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Research and Development</td>
+                        <td>Olivia Green</td>
+                        <td>60</td>
+                        <td>Building F</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </details>
     <h1>Chapter 2</h1>
