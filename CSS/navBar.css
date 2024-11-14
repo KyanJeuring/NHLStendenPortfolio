@@ -4,13 +4,17 @@ nav
 	padding: 0;
 	overflow: hidden;
 	background-color: rgb(var(--primaryColor));
-	font-family: sans-serif;
+}
+
+nav ul
+{
+	display: flex;
+	justify-content: left;
 }
 
 nav > ul > li 
 {
 	list-style-type: none;
-	float: left;
 }
 
 nav a 
