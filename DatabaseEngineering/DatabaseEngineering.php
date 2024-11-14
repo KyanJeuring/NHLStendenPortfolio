@@ -6,18 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Database Engineering</title>
     <link rel="icon" type="image/x-icon" href="./Assets/favicon.ico">
-    <link rel="stylesheet" href="./main.css" type="text/css">
-    <link rel="stylesheet" href="./navBar.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/main.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/navBar.css" type="text/css">
 </head>
 
 <body>
     <nav class="navBar">
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./WebDev.php">WebDev</a></li>
-            <li><a href="./DatabaseEngineering.php" class="active">Database Engineering</a></li>
-            <li><a href="./ProfessionalSkills.html">Professional Skills</a></li>
-            <li><a href="./Projects.html">Projects</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../WebDev/WebDev.php">WebDev</a></li>
+            <li><a href="../DatabaseEngineering/DatabaseEngineering.php" class="active">DE</a></li>
+            <li><a href="../ProfessionalSkills/ProfessionalSkills.html">Professional Skills</a></li>
         </ul>
     </nav>
     <div>
@@ -31,11 +30,11 @@
                 [
                     "Week 1" => 
                     [
-                        "Assignment 1" => "./DatabaseEngineering/Week1/A1.html",
-                        "Assignment 2" => "./DatabaseEngineering/Week1/A2.html",
-                        "Assignment 3" => "./DatabaseEngineering/Week1/A3.html",
-                        "Assignment 4" => "./DatabaseEngineering/Week1/A4.html",
-                        "PHP Assignment 1" => "./DatabaseEngineering/Week1/A1.php"
+                        "Assignment 1" => "./Week1/A1.html",
+                        "Assignment 2" => "./Week1/A2.html",
+                        "Assignment 3" => "./Week1/A3.html",
+                        "Assignment 4" => "./Week1/A4.html",
+                        "PHP Assignment 1" => "./Week1/A1.php"
                     ]
                 ];
 
@@ -54,10 +53,6 @@
             ?>
         </div>
     </main>
-    <footer class="headerFooterStyle">
-        <p>Contact: <a href="mailto:kyan.jeuring@student.nhlstenden.com">kyan.jeuring@student.nhlstenden.com</a></p>
-        <p>&copy; Kyan Jeuring</p>
-    </footer>
 </body>
 
 </html>

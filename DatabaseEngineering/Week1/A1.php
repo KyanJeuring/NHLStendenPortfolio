@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./CSS/main.css" type="text/css">
 </head>
 <body>
-    <a href="../../DatabaseEngineering.php">&#60;&#60; Back to Database Engineering Portfolio</a>
+    <a href="../DatabaseEngineering.php">&#60;&#60; Back to Database Engineering Portfolio</a>
     <hr>
     <?php
         $distances = array(
