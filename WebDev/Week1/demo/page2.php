@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
+    <a href="../../WebDev.php">&#60;&#60; Back to WebDev Portfolio</a>
+    <hr>
     <ul>
         <li><a href="./index.php">Home</a></li>
         <li><a href="./page2.php">Page 2</a></li>

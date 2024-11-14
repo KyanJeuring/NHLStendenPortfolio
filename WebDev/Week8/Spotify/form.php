@@ -11,7 +11,7 @@
 <body>
     <main>
         <header>
-            <div id="left"><img src="./Assets/spotifyLogo.svg" alt="Logo" id="spotifyLogo"></div>
+            <div id="left"><a href="../../WebDev.php"><img src="./Assets/spotifyLogo.svg" alt="Logo" id="spotifyLogo"></a></div>
             <div id="center">
                 <div id="homeIcon"><img src="./Assets/homeIcon.svg" alt="Home"></div>
                 <div id="search">

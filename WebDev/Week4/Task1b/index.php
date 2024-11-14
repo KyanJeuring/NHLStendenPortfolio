@@ -7,7 +7,7 @@
         <link rel="icon" type="image/x-icon" href="../../../Assets/favicon.ico">
     </head>
     <body>
-        <a href="../../../WebDev.php">&#60;&#60; Back to WebDev Portfolio</a>
+        <a href="../../WebDev.php">&#60;&#60; Back to WebDev Portfolio</a>
         <hr>
         <?php
         $colorWheel = array("Red", "Red", "Orange", "Orange", "Yellow", "Green", "Blue", "Pink");
