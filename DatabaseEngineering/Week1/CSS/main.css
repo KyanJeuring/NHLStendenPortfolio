@@ -1,0 +1,27 @@
+body
+{
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1
+{
+    margin-inline: 1rem;
+}
+
+h2
+{
+    margin: 0 2rem;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:link, a:visited
+{
+    color: black;
+}

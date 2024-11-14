@@ -1,4 +1,0 @@
-Assignment 3
-1. SELECT id FROM crime_scene_reports WHERE description LIKE '%robbery%' ORDER BY id ASC; 
-2. SELECT name FROM people WHERE phone_number LIKE '%(031)%' ORDER BY name ASC;
-3. SELECT id FROM atm_transactions WHERE day <= 29 AND atm_location = 'Houtweg' ORDER BY id ASC;

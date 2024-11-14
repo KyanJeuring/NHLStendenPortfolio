@@ -31,10 +31,10 @@
                 [
                     "Week 1" => 
                     [
-                        "Assignment 1" => "./DatabaseEngineering/Week1/A1.txt",
-                        "Assignment 2" => "./DatabaseEngineering/Week1/A2.txt",
-                        "Assignment 3" => "./DatabaseEngineering/Week1/A3.txt",
-                        "Assignment 4" => "./DatabaseEngineering/Week1/A4.txt",
+                        "Assignment 1" => "./DatabaseEngineering/Week1/A1.html",
+                        "Assignment 2" => "./DatabaseEngineering/Week1/A2.html",
+                        "Assignment 3" => "./DatabaseEngineering/Week1/A3.html",
+                        "Assignment 4" => "./DatabaseEngineering/Week1/A4.html",
                         "PHP Assignment 1" => "./DatabaseEngineering/Week1/A1.php"
                     ]
                 ];

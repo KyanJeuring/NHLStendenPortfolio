@@ -1,5 +1,0 @@
-Assignment 2
-1. SELECT title FROM movies WHERE year = 2014; 
-2. SELECT birth FROM people WHERE name = "Emma Stone";
-3. SELECT title FROM movies WHERE year >= 2018 ORDER BY title ASC;
-4. SELECT COUNT(rating) AS Amount FROM ratings WHERE rating = 8.4;

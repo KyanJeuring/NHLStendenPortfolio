@@ -1,0 +1,50 @@
+#bolWebsite
+{
+    height: 30vh;
+}
+
+.detailsContent
+{
+    margin-inline: 4rem;
+    width: 50vw;
+    overflow-wrap: break-word;
+}
+summary
+{
+    font-weight: bold;
+    font-size: 1rem;
+    margin-inline: 2rem 0;
+}
+
+.tables
+{
+    display: flex;
+    gap: 2rem;
+}
+
+caption
+{
+    text-transform: uppercase;
+}
+
+table
+{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.tableRed
+{
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.tableBlue
+{
+    background-color: rgba(0, 0, 255, 0.2);
+}
+
+td
+{
+    border-bottom: 1px solid black;
+    padding-inline: 1rem;
+}
