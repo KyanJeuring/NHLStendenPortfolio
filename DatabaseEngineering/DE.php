@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Database Engineering</title>
-    <link rel="icon" type="image/x-icon" href="./Assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
     <link rel="stylesheet" href="../CSS/main.css" type="text/css">
     <link rel="stylesheet" href="../CSS/navBar.css" type="text/css">
 </head>
