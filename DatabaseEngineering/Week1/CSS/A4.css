@@ -16,6 +16,13 @@ summary
     margin-inline: 2rem 0;
 }
 
+.assignmentNote
+{
+    margin-inline: 2rem;
+    font-weight: bold;
+    color: rgb(95, 76, 167);
+}
+
 .tables
 {
     display: flex;
@@ -52,5 +59,25 @@ table
 td
 {
     border-bottom: 1px solid black;
-    padding-inline: 1rem;
+}
+
+.tableInventory
+{
+    margin-inline: 2rem;
+    width: 50%;
+}
+
+.tableInventory tr:nth-child(2n)
+{
+    background-color: rgb(199, 238, 241);
+}
+
+.tableInventory tr:nth-child(2n+1)
+{
+    background-color: rgb(227, 246, 248);
+}
+
+.tableInventory tr:first-child
+{
+    background-color: rgb(143, 222, 228);
 }

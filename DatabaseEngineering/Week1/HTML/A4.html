@@ -144,7 +144,7 @@
         <summary>1.11:</summary>
         <div class="detailsContent">
             <p><strong>Question: </strong>Give an example of information that could be determined using the two tables you provided in your answer to Review Question 1.6.</p>
-            <p><strong>Answer: </strong> Using the two tables, you can determine the salary of each employee. For example, John Doe has a salary of €2600, and Jane Doe also has a salary of €2600.</p>
+            <p><strong>Answer: </strong>Using the two tables, you can determine the salary of each employee. For example, John Doe has a salary of &euro;2600, and Jane Doe also has a salary of &euro;2600.</p>
         </div>
     </details>
     <details>
@@ -209,164 +209,401 @@
         </div>
     </details>
     <h2>Chapter 2</h2>
+    <p class="assignmentNote">Use <i>only</i> the INVENTORY table to answer Review Questions 2.17 through 2.39:</p>
+    <table class="tableInventory">
+        <caption>Inventory</caption>
+        <tr>
+            <td>WarehouseID</td>
+            <td>SKU</td>
+            <td>SKU_Description</td>
+            <td>QuantityOnHand</td>
+            <td>QuantityOnOrder</td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>100100</td>
+            <td>Std. Scuba Tank, Yellow</td>
+            <td>250</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>200</td>
+            <td>100100</td>
+            <td>Std. Scuba Tank, Yellow</td>
+            <td>100</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>300</td>
+            <td>100100</td>
+            <td>Std. Scuba Tank, Yellow</td>
+            <td>100</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>100100</td>
+            <td>Std. Scuba Tank, Yellow</td>
+            <td>200</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>100200</td>
+            <td>Std. Scuba Tank, Magenta</td>
+            <td>200</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>200</td>
+            <td>100200</td>
+            <td>Std. Scuba Tank, Magenta</td>
+            <td>75</td>
+            <td>75</td>
+        </tr>
+        <tr>
+            <td>300</td>
+            <td>100200</td>
+            <td>Std. Scuba Tank, Magenta</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>100200</td>
+            <td>Std. Scuba Tank, Magenta</td>
+            <td>250</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>101100</td>
+            <td>Dive Mask, Small Clear</td>
+            <td>0</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>200</td>
+            <td>101100</td>
+            <td>Dive Mask, Small Clear</td>
+            <td>0</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>300</td>
+            <td>101100</td>
+            <td>Dive Mask, Small Clear</td>
+            <td>300</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>101100</td>
+            <td>Dive Mask, Small Clear</td>
+            <td>450</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>101200</td>
+            <td>Dive Mask, Med Clear</td>
+            <td>100</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>200</td>
+            <td>101200</td>
+            <td>Dive Mask, Med Clear</td>
+            <td>50</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>300</td>
+            <td>101200</td>
+            <td>Dive Mask, Med Clear</td>
+            <td>475</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>101200</td>
+            <td>Dive Mask, Med Clear</td>
+            <td>250</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>201000</td>
+            <td>Half-dome Tent</td>
+            <td>2</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>200</td>
+            <td>201000</td>
+            <td>Half-dome Tent</td>
+            <td>10</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>300</td>
+            <td>201000</td>
+            <td>Half-dome Tent</td>
+            <td>250</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>201000</td>
+            <td>Half-dome Tent</td>
+            <td>0</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>202000</td>
+            <td>Half-dome Tent Vestibule</td>
+            <td>10</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>200</td>
+            <td>202000</td>
+            <td>Half-dome Tent Vestibule</td>
+            <td>1</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>300</td>
+            <td>202000</td>
+            <td>Half-dome Tent Vestibule</td>
+            <td>100</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>202000</td>
+            <td>Half-dome Tent Vestibule</td>
+            <td>0</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>301000</td>
+            <td>Light Fly Climbing Harness</td>
+            <td>300</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>200</td>
+            <td>301000</td>
+            <td>Light Fly Climbing Harness</td>
+            <td>250</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>300</td>
+            <td>301000</td>
+            <td>Light Fly Climbing Harness</td>
+            <td>0</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>301000</td>
+            <td>Light Fly Climbing Harness</td>
+            <td>0</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>302000</td>
+            <td>Locking Carabiner, Oval</td>
+            <td>1000</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>200</td>
+            <td>302000</td>
+            <td>Locking Carabiner, Oval</td>
+            <td>1250</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>300</td>
+            <td>302000</td>
+            <td>Locking Carabiner, Oval</td>
+            <td>500</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>302000</td>
+            <td>Locking Carabiner, Oval</td>
+            <td>0</td>
+            <td>1000</td>
+        </tr>
+        <tr></tr>
+    </table>
     <details>
         <summary>2.17:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement to display SKU and SKU_Description.</p>
+            <p><strong>Answer: </strong>SELECT SKU, SKU_Description FROM INVENTORY&#59;</p>
         </div>
     </details>
     <details>
         <summary>2.18:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement to display SKU_Description and SKU.</p>
+            <p><strong>Answer: </strong>SELECT SKU_Description, SKU FROM INVENTORY&#59;</p>
         </div>
     </details>
     <details>
         <summary>2.19:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement to display WarehouseID.</p>
+            <p><strong>Answer: </strong>SELECT WarehouseID FROM INVENTORY&#59;</p>
         </div>
     </details>
     <details>
         <summary>2.20:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement to display unique WarehouseIDs.</p>
+            <p><strong>Answer: </strong>SELECT DISTINCT WarehouseID FROM INVENTORY&#59;</p>
         </div>
     </details>
     <details>
         <summary>2.21:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement to display all of the columns without using the SQL asterisk &#40;&ast;&#41; wildcard character</p>
+            <p><strong>Answer: </strong>SELECT WarehouseID, SKU, SKU_Description, QuantityOnHand, QuantityOnOrder FROM Inventory&#59;</p>
         </div>
     </details>
     <details>
         <summary>2.22:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement to display all of the columns using the SQL asterisk &#40;&ast;&#41; wildcard character.</p>
+            <p><strong>Answer: </strong>SELECT &ast; FROM INVENTORY&#59;</p>
         </div>
     </details>
     <details>
         <summary>2.23:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement to display all data on products having a QuantityOnHand greater than 0</p>
+            <p><strong>Answer: </strong>SELECT &ast; FROM INVENTORY WHERE QuantityOnHand &gt; 0&#59;</p>
         </div>
     </details>
     <details>
         <summary>2.24:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement to display the SKU and SKU_Description for products having QuantityOnHand equal to 0.</p>
+            <p><strong>Answer: </strong>SELECT SKU, SKU_Description FROM INVENTORY WHERE QuantityOnHand &equals; 0&#59;</p>
         </div>
     </details>
     <details>
         <summary>2.25:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement to display the SKU, SKU_Description, and WarehouseID for products that have a QuantityOnHand equal to 0. Sort the results in ascending order by WarehouseID</p>
+            <p><strong>Answer: </strong>SELECT SKU, SKU_Description, WarehouseID FROM Inventory WHERE QuantityOnHand &equals; 0 ORDER BY WarehouseID ASC&#59;</p>
         </div>
     </details>
     <details>
         <summary>2.26:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement to display the SKU, SKU_Description, and WarehouseID for products that have a QuantityOnHand greater than 0. Sort the results in descending order by WarehouseID and in ascending order by SKU.</p>
+            <p><strong>Answer: </strong>SELECT SKU, SKU_Description, WarehouseID FROM INVENTORY WHERE QuantityOnHand &gt; 0 ORDER BY WarehouseID DESC, SKU ASC&#59;</p>
         </div>
     </details>
     <details>
         <summary>2.27:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement to display SKU, SKU_Description, and WarehouseID for all products that have a QuantityOnHand equal to 0 and a QuantityOnOrder greater than 0. Sort the results in descending order by WarehouseID and in ascending order by SKU.</p>
+            <p><strong>Answer: </strong>SELECT SKU, SKU_Description, WarehouseID FROM INVENTORY WHERE QuantityOnHand &equals; 0 AND QuantityOnOrder &gt; 0 ORDER BY WarehouseID DESC, SKU ASC&#59;</p>
         </div>
     </details>
     <details>
         <summary>2.28:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement to display SKU, SKU_Description, and WarehouseID for all products that have a QuantityOnHand equal to 0 or a QuantityOnOrder equal to 0. Sort the results in descending order by WarehouseID and in ascending order by SKU.</p>
+            <p><strong>Answer: </strong>SELECT SKU, SKU_Description, WarehouseID FROM INVENTORY WHERE QuantityOnHand &equals; 0 OR QuantityOnOrder &equals; 0 ORDER BY WarehouseID DESC, SKU ASC&#59;</p>
         </div>
     </details>
     <details>
         <summary>2.29:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement to display the SKU, SKU_Description, WarehouseID, and QuantityOnHand for all products having a QuantityOnHand greater than 1 and less than 10. Do not use the BETWEEN keyword.</p>
+            <p><strong>Answer: </strong>SELECT SKU, SKU_Description, WarehouseID, QuantityOnHand FROM INVENTORY WHERE QuantityOnHand &gt; 1 AND QuantityOnHand &lt; 10&#59;</p>
         </div>
     </details>
     <details>
         <summary>2.30:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement to display the SKU, SKU_Description, WarehouseID, and QuantityOnHand for all products having a QuantityOnHand greater than 1 and less than 10. Use the BETWEEN keyword.</p>
+            <p><strong>Answer: </strong>SELECT SKU, SKU_Description, WarehouseID, QuantityOnHand FROM INVENTORY WHERE QuantityOnHand BETWEEN 1 AND 10&#59;</p>
         </div>
     </details>
     <details>
         <summary>2.31:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement to show a unique SKU and SKU_Description for all products having an SKU description starting with &#37;Half-Dome&#37;.</p>
+            <p><strong>Answer: </strong>SELECT DISTINCT SKU, SKU_Description FROM INVENTORY WHERE SKU_Description LIKE &apos;&#37;Half-Dome&#37;&apos;&#59;</p>
         </div>
     </details>
     <details>
         <summary>2.32:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement to show a unique SKU and SKU_Description for all products having a description that includes the word &#37;Climb&#37;.</p>
+            <p><strong>Answer: </strong>SELECT DISTINCT SKU, SKU_Description FROM INVENTORY WHERE SKU_Description LIKE &#39;&#37;Climb&#37;&#39;&#59;</p>
         </div>
     </details>
     <details>
         <summary>2.33:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement to show a unique SKU and SKU_Description for all products having a &#37;d&#37; in the third position from the left in SKU_Description.</p>
+            <p><strong>Answer: </strong>SELECT DISTINCT SKU, SKU_Description FROM INVENTORY WHERE SUBSTRING&#40;SKU_Description, 3, 1&#41; &equals; &#39;d&#39;&#59;</p>
         </div>
     </details>
     <details>
         <summary>2.34:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement that uses all of the SQL built-in functions on the QuantityOnHand column. Include meaningful column names in the result.</p>
+            <p><strong>Answer: </strong>SELECT SUM&#40;QuantityOnHand&#41; AS Total_QuantityOnHand,
+                AVG&#40;QuantityOnHand&#41; AS Average_QuantityOnHand, MAX&#40;QuantityOnHand&#41; AS Max_QuantityOnHand, MIN&#40;QuantityOnHand&#41; AS Min_QuantityOnHand, COUNT&#40;QuantityOnHand&#41; AS Count_Of_QuantityOnHand FROM INVENTORY&#59;</p>
         </div>
     </details>
     <details>
         <summary>2.35:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Explain the difference between the SQL built-in functions COUNT and SUM.</p>
+            <p><strong>Answer: </strong>The SQL built-in function COUNT returns the number of rows that match a specified condition, while the SUM function calculates the total amount of the values in a column.</p>
         </div>
     </details>
     <details>
         <summary>2.36:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement to display the WarehouseID and the sum of QuantityOnHand, grouped by WarehouseID. Name the sum TotalItemsOnHand and display the results in descending order of TotalItemsOnHand.</p>
+            <p><strong>Answer: </strong>SELECT WarehouseID, SUM&#40;QuantityOnHand&#41; AS TotalItemsOnHand FROM INVENTORY GROUP BY WarehouseID ORDER BY TotalItemsOnHand DESC&#59;</p>
         </div>
     </details>
     <details>
         <summary>2.37:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
-            <p><strong>Answer: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement to display the WarehouseID and the sum of QuantityOnHand, grouped by WarehouseID. Omit all SKU items that have 3 or more items on hand from the sum, and name the sum TotalItemsOnHandLT3 and display the results in descending order of TotalItemsOnHandLT3.</p>
+            <p><strong>Answer: </strong>SELECT WarehouseID, SUM&#40;QuantityOnHand&#41; AS TotalItemsOnHandLT3 FROM INVENTORY WHERE QuantityOnHand &lt; 3 GROUP BY WarehouseID ORDER BY TotalItemsOnHandLT3 DESC&#59;</p>
         </div>
     </details>
     <details>
         <summary>2.38:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
+            <p><strong>Question: </strong>Write an SQL statement to display the WarehouseID and the sum of QuantityOnHand grouped by WarehouseID. Omit all SKU items that have 3 or more items on hand from the sum, and name the sum TotalItemsOnHandLT3. Show the WarehouseID only for warehouses having fewer than 2 SKUs in their TotalItemsOnHandLT3. Display the results in descending order of TotalItemsOnHandLT3.</p>
             <p><strong>Answer: </strong></p>
         </div>
     </details>
     <details>
         <summary>2.39:</summary>
         <div class="detailsContent">
-            <p><strong>Question: </strong></p>
+            <p><strong>Question: </strong>In your answer to Review Question 2.38, was the WHERE clause or the HAVING clause applied first? Why?</p>
             <p><strong>Answer: </strong></p>
         </div>
     </details>
