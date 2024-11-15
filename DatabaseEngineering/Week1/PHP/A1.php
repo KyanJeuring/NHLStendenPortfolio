@@ -3,11 +3,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Assignment 1</title>
-    <link rel="stylesheet" href="./CSS/main.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="../../../Assets/favicon.ico">
+    <link rel="stylesheet" href="../CSS/main.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/A1PHP.css" type="text/css">
 </head>
 <body>
-    <a href="../DatabaseEngineering.php">&#60;&#60; Back to Database Engineering Portfolio</a>
-    <hr>
+    <a href="../../DatabaseEngineering.php">&#60;&#60; Back to Database Engineering Portfolio</a>
     <h1>PHP Assignment 1</h1>
     <?php
         $distances =
@@ -70,24 +71,28 @@
         }
     ?>
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST">
-        <label for="city1">Select first city:</label>
-        <select name="city1" id="city1">
-            <?php
-                foreach ($distances as $city => $values)
-                {
-                    echo "<option value=".$city.">".$city."</option>";
-                }
-            ?>
-        </select>
-        <label for="city2">Select second city:</label>
-        <select name="city2" id="city2">
-            <?php
-                foreach ($distances as $city => $values)
-                {
-                    echo "<option value=".$city.">".$city."</option>";
-                }
-            ?>
-        </select>
+        <div>
+            <label for="city1">Select first city:</label>
+            <select name="city1" id="city1">
+                <?php
+                    foreach ($distances as $city => $values)
+                    {
+                        echo "<option value=".$city.">".$city."</option>";
+                    }
+                ?>
+            </select>
+        </div>
+        <div>
+            <label for="city2">Select second city:</label>
+            <select name="city2" id="city2">
+                <?php
+                    foreach ($distances as $city => $values)
+                    {
+                        echo "<option value=".$city.">".$city."</option>";
+                    }
+                ?>
+            </select>
+        </div>
         <input type="submit" value="Submit">
     </form>
 </body>

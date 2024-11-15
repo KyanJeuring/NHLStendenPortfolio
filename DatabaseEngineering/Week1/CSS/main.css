@@ -18,12 +18,13 @@ h1, h2, h3, h4, h5, h6, a
 
 h1
 {
-    margin: 0.5rem 1rem;
+    padding-block: 0.5rem;
+    border-block: 0.1rem solid black;
 }
 
 h2
 {
-    margin: 0 2rem;
+    margin: 0 1rem;
 }
 
 summary
@@ -52,6 +53,7 @@ ol
 {
     padding-inline: 3rem;
 }
+
 li
 {
     margin: 0.5rem 0;

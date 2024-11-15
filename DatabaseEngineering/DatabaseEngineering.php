@@ -30,11 +30,12 @@
                 [
                     "Week 1" => 
                     [
-                        "Assignment 1" => "./Week1/A1.html",
-                        "Assignment 2" => "./Week1/A2.html",
-                        "Assignment 3" => "./Week1/A3.html",
-                        "Assignment 4" => "./Week1/A4.html",
-                        "PHP Assignment 1" => "./Week1/A1.php"
+                        "Assignment 1" => "./Week1/HTML/A1.html",
+                        "Assignment 2" => "./Week1/HTML/A2.html",
+                        "Assignment 3" => "./Week1/HTML/A3.html",
+                        "Assignment 4" => "./Week1/HTML/A4.html",
+                        "PHP Assignment 1" => "./Week1/PHP/A1.php",
+                        "PHP Assignment 2" => "./Week1/PHP/A2PHP/A2Form.php",
                     ]
                 ];
 
