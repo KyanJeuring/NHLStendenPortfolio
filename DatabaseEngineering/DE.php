@@ -15,8 +15,10 @@
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="../WebDev/WebDev.php">WebDev</a></li>
-            <li><a href="../DatabaseEngineering/DatabaseEngineering.php" class="active">DE</a></li>
-            <li><a href="../ProfessionalSkills/ProfessionalSkills.html">Professional Skills</a></li>
+            <li><a href="../DatabaseEngineering/DE.php" class="active">DE</a></li>
+            <li><a href="../ObjectOrientedProgramming/OOP.php">OOP</a></li>
+            <li><a href="../Projects/Projects.html">Projects</a></li>
+            <li><a href="../ProfessionalSkills/PS.html">PS</a></li>
         </ul>
     </nav>
     <div>

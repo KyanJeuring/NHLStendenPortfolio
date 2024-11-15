@@ -11,11 +11,6 @@
 	padding: 0;
 }
 
-html
-{
-	overscroll-behavior: none;
-}
-
 body
 {
 	font-family: monospace;
@@ -29,11 +24,6 @@ h1
 	text-align: center;
 }
 
-.headerFooterStyle 
-{
-	background-color: rgb(var(--primaryColor));
-}
-
 .mainTitle
 {
 	font-size: 3rem;
@@ -43,19 +33,50 @@ h1
 
 main
 {
-	height: 85dvh;
 	display: inline-flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	width: 100vw;
 }
 
-main > div
+main > a
 {
+	border-radius: 5rem;
+	margin: 0.5rem;
 	padding: 2rem;
+	width: calc(100vw / 3.5);
+}
+
+main > a:link, main > a:visited
+{
+		color: black;
+	text-decoration: none;
+}
+
+img
+{
+	background-color: transparent;
+}
+
+svg
+{
+	margin: 5rem auto;
+	width: 30vh;
+	height: 30vh;
+	fill: rgb(var(--primaryColor));
+}
+
+main > a:hover
+{
+	background-color: #fff;
+	box-shadow: inset 0 0 1rem 1rem rgba(200, 200, 200, 0.5);
+}
+
+a > div
+{
 	display: flex;
 	flex-direction: column;
-	width: calc(100vw / 3);
+	justify-content: center;
 }
 
 details 
@@ -86,10 +107,7 @@ div a
 	padding-bottom: 5px;
 }
 
-svg
+.errorMessage
 {
-	margin: 5rem auto;
-	width: 30vh;
-	height: 30vh;
-	fill: rgb(var(--primaryColor));
+	color: red;
 }
