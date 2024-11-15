@@ -41,29 +41,30 @@ main
 
 main > a
 {
+	width: calc(100vw / 3.5);
 	border-radius: 5rem;
 	margin: 0.5rem;
 	padding: 2rem;
-	width: calc(100vw / 3.5);
 }
 
-main :is(a:link, a:visited)
+main :is(a:link, a:visited, svg)
 {
 	color: black;
+	fill: black;
 	text-decoration: none;
 }
 
-img
+h1 a
 {
-	background-color: transparent;
+	display: flex;
+	align-items: center;
 }
 
-svg
+a > svg
 {
-	margin: 5rem auto;
-	width: 30vh;
-	height: 30vh;
-	fill: rgb(var(--primaryColor));
+	width: 5vw;
+	height: 5vh;
+	fill: #000;
 }
 
 main > a:hover
@@ -72,39 +73,10 @@ main > a:hover
 	box-shadow: inset 0 0 1rem 1rem rgba(200, 200, 200, 0.5);
 }
 
-a > div
+main a:hover, a:hover svg
 {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-details 
-{
-	margin-inline: 5rem 0;
-}
-
-div ul 
-{
-	margin-inline: 5rem;
-	list-style-type: none;
-	padding: 0%;
-	margin: 0%;
-}
-
-div a 
-{
-	margin-left: 40px;
-	text-decoration: none;
-}
-
-.summaryTitle 
-{
-	font-size: 26px;
-	font-weight: bold;
-	padding-left: 15px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	color: rgb(var(--primaryColor));
+	fill: rgb(var(--primaryColor));
 }
 
 .WIP h1
@@ -127,4 +99,47 @@ div a
 	display: block;
 	color: red;
 	fill: red;
+}
+
+div > svg
+{
+	margin: 5rem auto;
+	width: 30vh;
+	height: 30vh;
+}
+
+a > div
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+details 
+{
+	margin-inline: 2rem 0;
+}
+
+div ul
+{
+	margin-inline: 5rem;
+	list-style-type: none;
+	padding: 0%;
+	margin: 0%;
+}
+
+div ul li
+{
+	margin-inline: 2rem;
+}
+
+div a 
+{
+	text-decoration: none;
+}
+
+.summaryTitle 
+{
+	font-size: 2rem;
+	font-weight: bold;
 }
