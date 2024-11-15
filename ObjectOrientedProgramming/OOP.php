@@ -26,7 +26,7 @@
     </div>
     <main>
         <div>
-            <h1 class="errorMessage">Will be available  in year 1 period 3</h1>
+            <h1 class="errorMessage">&#40;WIP&#41;: Will be available  in year 1 period 3</h1>
         </div>
     </main>
 </body>
