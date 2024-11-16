@@ -74,6 +74,13 @@ main :is(a:link, a:visited, svg)
 	text-decoration: none;
 }
 
+a > svg
+{
+	height: 32px;
+	margin-right: 0.5rem;
+	fill: #000;
+}
+
 main > a:hover
 {
 	background-color: #fff;
