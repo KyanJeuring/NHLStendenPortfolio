@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebDev</title>
+    <title>Object Oriented Programming</title>
     <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
     <link rel="stylesheet" href="../CSS/main.css" type="text/css">
     <link rel="stylesheet" href="../CSS/navBar.css" type="text/css">
@@ -26,7 +26,7 @@
     </div>
     <main>
         <div>
-            <h1 class="errorMessage">&#40;WIP&#41;: Will be available  in year 1 period 3</h1>
+            <h1 class="NSYMessage">&#40;WIP&#41;: Will be available  in year 1 period 3!</h1>
         </div>
     </main>
 </body>

@@ -11,6 +11,20 @@
 </head>
 
 <body>
+    <?php
+        class Assignments
+        {
+            public $title;
+            public $link;
+            public $class;
+            public function __construct($title, $link, $class)
+            {
+                $this->title = $title;
+                $this->link = $link;
+                $this->class = $class;
+            }
+        }
+    ?>
     <nav class="navBar">
         <ul>
             <li><a href="../index.html">Home</a></li>
@@ -28,17 +42,17 @@
         <div>
         <h1>Weekly Assignments</h1>
             <?php
-                $weeks =
+                $weeks = 
                 [
                     "Week 1" => 
                     [
-                        "Assignment 1" => "./Week1/HTML/A1.html",
-                        "Assignment 2" => "./Week1/HTML/A2.html",
-                        "Assignment 3" => "./Week1/HTML/A3.html",
-                        "Assignment 4" => "./Week1/HTML/A4.html",
-                        "PHP Assignment 1" => "./Week1/PHP/A1.php",
-                        "PHP Assignment 2" => "./Week1/PHP/A2PHP/A2Form.php",
-                    ]
+                        new Assignments("Assignment 1", "./Week1/HTML/A1.html", ""),
+                        new Assignments("Assignment 2", "./Week1/HTML/A2.html", ""),
+                        new Assignments("Assignment 3", "./Week1/HTML/A3.html", ""),
+                        new Assignments("Assignment 4", "./Week1/HTML/A4.html", ""),
+                        new Assignments("PHP Assignment 1", "./Week1/PHP/A1.php", ""),
+                        new Assignments("PHP Assignment 2", "./Week1/PHP/A2PHP/A2Form.php", "WIPMessage"),
+                    ],
                 ];
 
                 foreach ($weeks as $week => $assignments)
@@ -46,9 +60,9 @@
                     echo "<details>";
                     echo "<summary class='summaryTitle'>$week</summary>";
                     echo "<ul>";
-                    foreach ($assignments as $title => $link)
+                    foreach ($assignments as $assignment)
                     {
-                        echo "<li><a href='$link'>$title</a></li>";
+                        echo "<li><a href='$assignment->link' class='$assignment->class'>$assignment->title</a></li>";
                     }
                     echo "</ul>";
                     echo "</details>";

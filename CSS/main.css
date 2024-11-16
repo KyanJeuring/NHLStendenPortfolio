@@ -24,9 +24,10 @@ body
 	user-select: none;
 }
 
-h1, h2
+h1
 {
 	text-align: center;
+	margin-inline: 2rem;
 }
 
 .mainTitle
@@ -75,7 +76,7 @@ a > svg
 main > a:hover
 {
 	background-color: #fff;
-	box-shadow: inset 0 0 1rem 1rem rgba(200, 200, 200, 0.5);
+	box-shadow: inset 0 0 1rem 1rem rgba(var(--primaryColor), 0.5);
 }
 
 main a:hover, a:hover svg
@@ -84,26 +85,33 @@ main a:hover, a:hover svg
 	fill: rgb(var(--primaryColor));
 }
 
-.WIP h1
+:is(.WIP, .NSY) h1
 {
 	color: #000;
 }
 
-.WIP h2
+.WIP:hover
 {
-	display: none;
+	box-shadow: inset 0 0 1rem 1rem rgba(255, 200, 0, 0.5);
 }
 
-.WIP:hover
+.WIP:hover :is(h1, h2, svg), .WIPMessage
+{
+	display: block;
+	color: rgb(255, 200, 0) !important;
+	fill: rgb(255, 200, 0);
+}
+
+.NSY:hover
 {
 	box-shadow: inset 0 0 1rem 1rem rgba(255, 0, 0, 0.5);
 }
 
-.WIP:hover :is(h1, h2, svg), .errorMessage
+.NSY:hover :is(h1, h2, svg), .NSYMessage
 {
 	display: block;
-	color: red;
-	fill: red;
+	color: rgb(255, 0, 0) !important;
+	fill: rgb(255, 0, 0);
 }
 
 div > svg
@@ -120,7 +128,7 @@ a > div
 	justify-content: center;
 }
 
-details 
+details
 {
 	margin-inline: 2rem 0;
 }
@@ -147,4 +155,20 @@ div a
 {
 	font-size: 2rem;
 	font-weight: bold;
+}
+
+@media (max-width:1281px)
+{
+	main > a
+	{
+		width: 45vw;
+	}
+}
+
+@media (max-width: 768px)
+{
+	main > a
+	{
+		width: 100vw;
+	}
 }
