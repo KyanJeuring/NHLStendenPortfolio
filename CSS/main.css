@@ -53,6 +53,7 @@ h1
 
 main
 {
+	margin-bottom: 5rem;
 	display: inline-flex;
 	flex-wrap: wrap;
 	justify-content: space-around;

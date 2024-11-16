@@ -31,7 +31,7 @@
             <li><a href="../WebDev/WebDev.php">WebDev</a></li>
             <li><a href="../DatabaseEngineering/DE.php" class="active">DE</a></li>
             <li><a href="../ObjectOrientedProgramming/OOP.php">OOP</a></li>
-            <li><a href="../Dataprocessing/DP.php">DP</a></li>
+            <li><a href="../DataProcessing/DP.php">DP</a></li>
             <li><a href="../SoftwareQuality/SQ.php">SQ</a></li>
             <li><a href="../AppDev/AppDev.php">AppDev</a></li>
             <li><a href="../Projects/Projects.html">Projects</a></li>

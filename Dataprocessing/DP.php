@@ -17,7 +17,7 @@
             <li><a href="../WebDev/WebDev.php">WebDev</a></li>
             <li><a href="../DatabaseEngineering/DE.php">DE</a></li>
             <li><a href="../ObjectOrientedProgramming/OOP.php">OOP</a></li>
-            <li><a href="../Dataprocessing/DP.php" class="active">DP</a></li>
+            <li><a href="../DataProcessing/DP.php" class="active">DP</a></li>
             <li><a href="../SoftwareQuality/SQ.php">SQ</a></li>
             <li><a href="../AppDev/AppDev.php">AppDev</a></li>
             <li><a href="../Projects/Projects.html">Projects</a></li>
@@ -25,7 +25,7 @@
         </ul>
     </nav>
     <div>
-        <h1 class="mainTitle">Portfolio Dataprocessing</h1>
+        <h1 class="mainTitle">Portfolio Data Processing</h1>
     </div>
     <main>
         <div id="explanation" onclick="alert('Explanation of the colors.\nBlack &equals; Unselected\nColored &equals; Ready to select\nYellow &equals; Work in progress &#40;WIP&#41;\nRed &equals; Not started yet &#40;NSY&#41;\n\nIf there are any questions about the portfolio you can mail to:\nkyanjeuring@gmail.com')">
