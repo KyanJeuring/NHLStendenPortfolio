@@ -24,6 +24,20 @@ body
 	user-select: none;
 }
 
+#explanation, #explanation svg
+{
+	position: absolute;
+	top: 0rem;
+	right: 1rem;
+	width: 3rem;
+	height: 3rem;
+}
+
+#explanation svg:hover
+{
+	fill: rgb(var(--primaryColor));	
+}
+
 h1
 {
 	text-align: center;
@@ -60,19 +74,6 @@ main :is(a:link, a:visited, svg)
 	text-decoration: none;
 }
 
-h1 a
-{
-	display: flex;
-	align-items: center;
-}
-
-a > svg
-{
-	width: 5vw;
-	height: 5vh;
-	fill: #000;
-}
-
 main > a:hover
 {
 	background-color: #fff;
@@ -97,7 +98,6 @@ main a:hover, a:hover svg
 
 .WIP:hover :is(h1, h2, svg), .WIPMessage
 {
-	display: block;
 	color: rgb(255, 200, 0) !important;
 	fill: rgb(255, 200, 0);
 }
@@ -109,7 +109,6 @@ main a:hover, a:hover svg
 
 .NSY:hover :is(h1, h2, svg), .NSYMessage
 {
-	display: block;
 	color: rgb(255, 0, 0) !important;
 	fill: rgb(255, 0, 0);
 }
@@ -167,6 +166,11 @@ div a
 
 @media (max-width: 768px)
 {
+	#explanation, #explanation svg
+	{
+		top: 2rem;
+	}
+
 	main > a
 	{
 		width: 100vw;
