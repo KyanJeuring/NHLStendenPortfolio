@@ -8,6 +8,12 @@ nav
 	background-color: rgb(var(--primaryColor));
 }
 
+nav :is(svg, svg:hover)
+{
+	fill: #fff;
+	margin: 0;
+}
+
 nav ul
 {
 	display: flex;
@@ -48,5 +54,10 @@ nav a:hover
 	nav
 	{
 		position: static;
+	}
+	
+	nav a
+	{
+		padding-inline: 1.5rem;
 	}
 }
