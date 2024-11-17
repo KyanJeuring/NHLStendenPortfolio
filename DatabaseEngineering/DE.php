@@ -57,7 +57,7 @@
                         new Assignments("Assignment 3", "./Week1/HTML/A3.html", ""),
                         new Assignments("Assignment 4", "./Week1/HTML/A4.html", ""),
                         new Assignments("PHP Assignment 1", "./Week1/PHP/A1.php", ""),
-                        new Assignments("PHP Assignment 2", "./Week1/PHP/A2PHP/A2Form.php", "WIPMessage"),
+                        new Assignments("PHP Assignment 2", "./Week1/PHP/A2.php", ""),
                     ],
                 ];
 

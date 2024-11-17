@@ -1,0 +1,4 @@
+:is(div, form)
+{
+    margin-inline: 1rem;
+}
