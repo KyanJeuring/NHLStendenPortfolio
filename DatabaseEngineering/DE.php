@@ -59,6 +59,10 @@
                         new Assignments("PHP Assignment 1", "./Week1/PHP/A1.php", ""),
                         new Assignments("PHP Assignment 2", "./Week1/PHP/A2.php", ""),
                     ],
+                    "Week 2" =>
+                    [
+
+                    ],
                 ];
 
                 foreach ($weeks as $week => $assignments)
