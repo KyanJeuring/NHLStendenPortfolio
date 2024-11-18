@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../CSS/A2PHP.css" type="text/css">
 </head>
 <body>
-    <a href="../../DatabaseEngineering.php">&#60;&#60; Back to Database Engineering Portfolio</a>
+    <a href="../../DE.php">&#60;&#60; Back to Database Engineering Portfolio</a>
     <h1>PHP Assignment 2</h1>
     <?php
 		$errors = array();
