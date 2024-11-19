@@ -105,11 +105,11 @@
                 foreach ($weeks as $week => $assignments)
                 {
                     echo "<details>";
-                    echo "<summary class='summaryTitle'>$week</summary>";
+                    echo "<summary class='summaryTitle'>".$week."</summary>";
                     echo "<ul>";
                     foreach ($assignments as $assignment)
                     {
-                        echo "<li><a href='$assignment->link' class='$assignment->class'>$assignment->title</a></li>";
+                        echo "<li><a href='".$assignment->link."' class='".$assignment->class."'>$assignment->title</a></li>";
                     }
                     echo "</ul>";
                     echo "</details>";
@@ -128,7 +128,7 @@
 
                     foreach ($practiceExams as $practiceExam)
                     {
-                        echo "<li><a href='$practiceExam->link' class='$practiceExam->class'>$practiceExam->title</a></li>";
+                        echo "<li><a href='".$practiceExam->link."' class='".$practiceExam->class."'>".$practiceExam->title."</a></li>";
                     }
                 ?>
             </ul>

@@ -81,6 +81,11 @@ a > svg
 	margin-right: 0.5rem;
 }
 
+.linkIcon
+{
+	height: 24px;
+}
+
 main > a:hover
 {
 	background-color: #fff;
@@ -134,11 +139,6 @@ a > div
 	justify-content: center;
 }
 
-details
-{
-	margin-inline: 2rem 0;
-}
-
 div ul
 {
 	margin-inline: 5rem;
@@ -157,9 +157,21 @@ div a
 	text-decoration: none;
 }
 
+#portfolioGitHub
+{
+	width: 100vw;
+	margin-bottom: 1rem;
+}
+
 .summaryTitle 
 {
 	font-size: 2rem;
+	font-weight: bold;
+}
+
+.summarySubTitle 
+{
+	font-size: 1.5rem;
 	font-weight: bold;
 }
 
