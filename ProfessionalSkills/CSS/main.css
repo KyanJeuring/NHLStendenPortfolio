@@ -1,0 +1,25 @@
+.mainPortfolio
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 2rem;
+}
+
+.mainPortfolio > details
+{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.mainPortfolio > details > details
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.mainPortfolio embed
+{
+    width: 50vw;
+    height: 600px;
+}
