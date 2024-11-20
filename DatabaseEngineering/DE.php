@@ -50,7 +50,7 @@
             <?php
                 $weeks = 
                 [
-                    "Week 1" => 
+                    "1" => 
                     [
                         new Assignments("Assignment 1", "./Week1/HTML/A1.html", ""),
                         new Assignments("Assignment 2", "./Week1/HTML/A2.html", ""),
@@ -59,7 +59,7 @@
                         new Assignments("PHP Assignment 1", "./Week1/PHP/A1.php", ""),
                         new Assignments("PHP Assignment 2", "./Week1/PHP/A2.php", ""),
                     ],
-                    "Week 2" =>
+                    "2" =>
                     [
 
                     ],
@@ -68,7 +68,7 @@
                 foreach ($weeks as $week => $assignments)
                 {
                     echo "<details>";
-                    echo "<summary class='summaryTitle'>".$week."</summary>";
+                    echo "<summary class='summaryTitle'>Week&nbsp;".$week."</summary>";
                     echo "<ul>";
                     foreach ($assignments as $assignment)
                     {

@@ -50,7 +50,7 @@
             <?php
                 $weeks = 
                 [
-                    "Week 1" => 
+                    "1" => 
                     [
                         new Assignments("Demo Website", "./Week1/demo/index.php", ""),
                         new Assignments("BridgesCanals 1", "./Week1/Example 1/index.html", ""),
@@ -61,14 +61,14 @@
                         new Assignments("Van Winteren", "./Week1/VanWinteren/index.php", ""),
                         new Assignments("Variable Switch", "./Week1/VarSwitch/index.php", ""),
                     ],
-                    "Week 2" =>
+                    "2" =>
                     [
                         new Assignments("Mondriaan", "./Week2/Mondriaan/index.html", ""),
                         new Assignments("Gallery Website", "./Week2/GalleryWebsite/index.html", ""),
                         new Assignments("Date Calculation", "./Week2/DateCalculation/index.php", ""),
                         new Assignments("Grading Table", "./Week2/GradingTable/index.php", ""),
                     ],
-                    "Week 3" =>
+                    "3" =>
                     [
                         new Assignments("Website Recreation", "./Week3/WebsiteRecreation/index.html", ""),
                         new Assignments("Number Comparator", "./Week3/Number Comparator/index.php", ""),
@@ -76,7 +76,7 @@
                         new Assignments("Video Store", "./Week3/Video Store/index.php", ""),
                         new Assignments("Sunny Side Agency", "./Week3/SSA/index.html", ""),
                     ],
-                    "Week 4" =>
+                    "4" =>
                     [
                         new Assignments("Website Recreation", "./Week4/WebsiteRecreation/index.html", ""),
                         new Assignments("Task 1a", "./Week4/Task1a/index.php", ""),
@@ -88,15 +88,15 @@
                         new Assignments("Task 3b", "./Week4/Task3b/index.php", ""),
                         new Assignments("Task 3c", "./Week4/Task3c/index.php", ""),
                     ],
-                    "Week 5" =>
+                    "5" =>
                     [
                         new Assignments("Webinar Subscription", "./Week5/WebinarSubscription/index.php", "NSYMessage"),
                     ],
-                    "Week 6" =>
+                    "6" =>
                     [
                         new Assignments("Formy", "./Week6/formy/mylittleformy.php", ""),
                     ],
-                    "Week 8" =>
+                    "8" =>
                     [
                         new Assignments("Spotify", "./Week8/Spotify/index.php", ""),
                     ]
@@ -105,7 +105,7 @@
                 foreach ($weeks as $week => $assignments)
                 {
                     echo "<details>";
-                    echo "<summary class='summaryTitle'>".$week."</summary>";
+                    echo "<summary class='summaryTitle'>Week&nbsp;".$week."</summary>";
                     echo "<ul>";
                     foreach ($assignments as $assignment)
                     {
