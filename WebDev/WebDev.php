@@ -1,3 +1,6 @@
+<?php
+    require_once "../Classes/Assignments.class.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,18 +15,6 @@
 
 <body>
     <?php
-        class Assignments
-        {
-            public $title;
-            public $link;
-            public $class;
-            public function __construct($title, $link, $class)
-            {
-                $this->title = $title;
-                $this->link = $link;
-                $this->class = $class;
-            }
-        }
     ?>
 	<nav class="navBar">
 		<ul>
