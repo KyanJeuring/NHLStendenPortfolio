@@ -180,6 +180,18 @@ div a
 	font-weight: bold;
 }
 
+.WIPImage
+{
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+}
+
+.WIPImage :is(svg)
+{
+	width: 50vw;
+	height: auto;
+}
 @media (max-width:1281px)
 {
 	main > a
