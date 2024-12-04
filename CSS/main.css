@@ -144,6 +144,20 @@ a > div
 	justify-content: center;
 }
 
+a > div:has(img)
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+a > div:has(img) img
+{
+	margin: auto 1rem;
+	height: 32px;
+	width: 32px;
+}
+
 div ul
 {
 	margin-inline: 5rem;
