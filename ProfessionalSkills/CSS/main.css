@@ -1,3 +1,17 @@
+.mainTitle
+{
+    margin-block: 0 2rem !important;
+    padding: 0.5rem;
+    background-color: rgb(var(--primaryColor));
+    color: white;
+}
+
+h1
+{
+    font-size: 3rem;
+    margin-block: 0.5rem;
+}
+
 .mainPortfolio
 {
     display: flex;
