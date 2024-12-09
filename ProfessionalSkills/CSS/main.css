@@ -6,21 +6,42 @@
     padding-inline: 2rem;
 }
 
-.mainPortfolio > details
+.mainPortfolio > details > details
+{
+    margin-inline: 2rem;
+}
+
+.mainPortfolio > details > details > details
+{
+    margin-inline: 2rem;
+}
+
+p
+{
+    margin-inline: 2rem;
+}
+
+summary
 {
     font-size: 2.5rem;
     font-weight: bold;
 }
 
-.mainPortfolio > details > details
+.mainPortfolio > summary
 {
-    margin-inline: 2rem;
     font-size: 1.5rem;
-    font-weight: bold;
 }
 
-.mainPortfolio embed
+embed
 {
-    width: 50vw;
-    height: 600px;
+    width: 60vw;
+    height: 80vh;
+}
+
+@media (max-width: 768px)
+{
+    embed
+    {
+        width: 85vw;
+    }
 }
