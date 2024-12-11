@@ -51,6 +51,11 @@
                             new Assignments("PHP Assignment 1", "./Week2/PHP/A1/index.html", ""),
                             new Assignments("PHP Assignment 2", "./Week2/PHP/A2/index.html", ""),
                         ],
+                        "3" =>
+                        [
+                            new Assignments("PHP Assignment 1", "./Week3/PHP/A1/index.php", ""),
+                            new Assignments("PHP Assignment 2", "./Week3/PHP/A2/index.php", ""),
+                        ],
                     ];
 
                     foreach ($weeks as $week => $assignments)
