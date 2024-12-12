@@ -56,6 +56,22 @@
                             new Assignments("PHP Assignment 1", "./Week3/PHP/A1/index.php", ""),
                             new Assignments("PHP Assignment 2", "./Week3/PHP/A2/index.php", ""),
                         ],
+                        "4" =>
+                        [
+                            new Assignments("Assignment 1", "./Week4/SQLJoins/A1.html", "NSYMessage"),
+                            new Assignments("Assignment 2", "./Week4/SQLJoins/A2.html", "NSYMessage"),
+                            new Assignments("Assignment 3", "./Week4/SQLJoins/A3.html", "NSYMessage"),
+                            new Assignments("Bug Reporter", "./Week4/SQLJoins/index.php", "NSYMessage"),
+                        ],
+                        "5" =>
+                        [
+                            new Assignments("Assignment 1", "./Week5/SQLSubqueries/A1.html", "WIPMessage"),
+                            new Assignments("Assignment 2", "./Week5/SQLSubqueries/A2.html", "WIPMessage"),
+                            new Assignments("Assignment 3", "./Week5/SQLSubqueries/A3.html", "WIPMessage"),
+                            new Assignments("Assignment 4", "./Week5/SQLSubqueries/A4.html", "WIPMessage"),
+                            new Assignments("Assignment 5", "./Week5/SQLSubqueries/A5.html", "WIPMessage"),
+                            new Assignments("Kommaardoor", "./Week5/Kommaardoor/index.php", "WIPMessage"),
+                        ],
                     ];
 
                     foreach ($weeks as $week => $assignments)

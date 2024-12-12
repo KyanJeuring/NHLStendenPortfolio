@@ -206,11 +206,17 @@ div a
 	width: 50vw;
 	height: auto;
 }
+
 @media (max-width:1281px)
 {
 	main > a
 	{
 		width: 45vw;
+	}
+
+	.WIPImage :is(svg)
+	{
+		width: 75vw;
 	}
 }
 
@@ -224,5 +230,10 @@ div a
 	a h1:nth-child(2)
 	{
 		display: none;
+	}
+
+	.WIPImage :is(svg)
+	{
+		width: 90vw;
 	}
 }
