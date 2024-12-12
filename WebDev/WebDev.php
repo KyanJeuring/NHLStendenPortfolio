@@ -1,5 +1,5 @@
 <?php
-    require_once "../Classes/Assignments.class.php";
+    include('../Classes/Assignments.class.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">

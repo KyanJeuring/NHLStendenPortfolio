@@ -1,5 +1,5 @@
 <?php
-	require_once "./Classes/portfolioButtons.class.php";
+	include('./Classes/portfolioButtons.class.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
