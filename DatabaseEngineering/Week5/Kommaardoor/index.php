@@ -1,3 +1,6 @@
+<?php
+    require_once ('./config/dbconfig.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +24,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="products.php">Manager Products</a></li>
                     <li><a href="register.php">Register</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -48,15 +51,8 @@
             <h1>Our products</h1>
             <div id="cardContainer">
                 <?php
-                //create code
-
-                ?>
-
-
-
-
-
-
+                    include("./items.php");
+                ?> 
             </div>
         </div>
         <footer class="blueBackground">

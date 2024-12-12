@@ -37,7 +37,7 @@ function verifyPassword($password, $hash)
             <h1>Administrator Registration</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="products.php">Manager Products</a></li>
                     <li><a href="register.php">Register</a></li>
                     <li><a href="contact.html">Contact</a></li>

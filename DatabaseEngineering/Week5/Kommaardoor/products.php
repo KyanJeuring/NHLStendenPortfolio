@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    require_once ('./config/dbconfig.php');
+    require_once('./config/dbconfig.php');
 
 /*     if (!isset($_SESSION['email'])) {
         header('Location: login.php');
@@ -22,51 +22,57 @@
 <body>
     <div id="container">
         <header>
-            <h1>Product Management</h1>
+            <div id="logo">
+                <img src="img/logo.png">
+                <h1>Kommaardoor</h1>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.php">Manager Products</a></li>
-                    <li><a href="register.php">Register</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="products.php">Products</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
-    </div>
-    <section class="mainContent">
-        <h1>Our products</h1>
-        <div id="productContainer">
-            <?php
-                if($dbHandler)
-                {
-                    if($dbHandler)
-                    {
-                        try
-                        {
-                            $stmt = $dbHandler->prepare("SELECT * FROM products");
-                            $stmt->execute();
-                        }
-                        catch(Exception $ex) {
-                            echo $ex;
-                        }
-                    }
-                }
-                if(isset($stmt))
-                {
-                    while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
-                    {
-                        ?>
-                        <div class="card">
-                            <h2><?php echo $row['productname']?></h2>
-                            <img src="<?php echo $row['image_url']?>">
-                            <a class="infoBtn" href="#"><?php echo $row['short_description']?></a>
-                        </div>
-                        <?php
-                    }
-                    $stmt -> closeCursor();
-                }
-            ?> 
+        <section class="mainContent">
+            <h1>Our products</h1>
+            <div id="productContainer">
+                <?php
+                    include('./items.php');
+                ?> 
+            </div>
+        </section>
+        <footer class="blueBackground">
+                <div>
+                    <div class="footerSection">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li>Something</li>
+                            <li>Something</li>
+                            <li>Something</li>
+                            <li>Something</li>
+                        </ul>
+                    </div>
+                    <div class="footerSection">
+                        <h3>About us</h3>
+                        <ul>
+                            <li>Something</li>
+                            <li>Something</li>
+                            <li>Something</li>
+                            <li>Something</li>
+                        </ul>
+                    </div>
+                    <div class="footerSection">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li>Something</li>
+                            <li>Something</li>
+                            <li>Something</li>
+                            <li>Something</li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </div>
-    </section>
 </body>
 </html>
