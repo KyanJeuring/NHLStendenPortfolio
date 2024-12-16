@@ -1,4 +1,6 @@
 <?php
+    require_once ('./config/dbconfig.php');
+
     if($dbHandler)
     {
         if($dbHandler)
@@ -23,7 +25,7 @@
                 <img src="<?php echo $row['image_url']?>">
                 <a class="infoBtn" href="#"><?php echo $row['short_description']?></a>
             </div>
-            <?php
+        <?php
         }
         $stmt -> closeCursor();
     }

@@ -169,13 +169,12 @@ nav>ul {
 #productContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     gap: 50px
 }
 
 #cardContainer
 {
-    overflow-x: scroll;
+    overflow-x: auto;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
 }
@@ -183,6 +182,7 @@ nav>ul {
 #productContainer
 {
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #cardContainer img,

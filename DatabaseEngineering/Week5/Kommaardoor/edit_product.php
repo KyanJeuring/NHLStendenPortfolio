@@ -1,5 +1,5 @@
 <?php
-//create code
+    require_once ('./config/dbconfig.php');
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +27,6 @@
                 </ul>
             </nav>
         </header>
-
         <div id="editProductForm">
             <form action="" method="post">
                 <label for="productName">Product Name:</label>
@@ -38,6 +37,22 @@
                 <input type="text" id="imageURL" name="imageURL" value="<?php echo $product['image_url']; ?>" required>
                 <input type="submit" value="Update Product">
             </form>
+            <?php
+                if($dbHandler)
+                {
+                    if($dbHandler)
+                    {
+                        try
+                        {
+                            $stmt = $dbHandler->prepare("SELECT * FROM products");
+                            $stmt->execute();
+                        }
+                        catch(Exception $ex) {
+                            echo $ex;
+                        }
+                    }
+                }
+            ?>
         </div>
 
     </div>

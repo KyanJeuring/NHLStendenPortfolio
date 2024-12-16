@@ -1,6 +1,3 @@
-<?php
-    require_once ('./config/dbconfig.php');
-?>
 <!DOCTYPE html>
 <html lang="en">
 

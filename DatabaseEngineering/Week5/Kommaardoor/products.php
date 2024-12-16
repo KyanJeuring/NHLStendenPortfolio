@@ -1,9 +1,7 @@
 <?php
     session_start();
 
-    require_once('./config/dbconfig.php');
-
-/*     if (!isset($_SESSION['email'])) {
+    /*     if (!isset($_SESSION['email'])) {
         header('Location: login.php');
         exit();
     } */
