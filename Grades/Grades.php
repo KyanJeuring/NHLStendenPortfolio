@@ -58,7 +58,7 @@
                 <input type="submit" value="Show grades">
             </form>
             <?php
-                if ($_SERVER["REQUEST_METHOD"] == "POST"):
+                if($_SERVER["REQUEST_METHOD"] == "POST"):
                     $year = "%" . filter_input(INPUT_POST, "year") . "%";
                     $period = "%" . filter_input(INPUT_POST, "period") . "%";
             ?>
@@ -73,31 +73,57 @@
                     {
                         try
                         {
-                                $stmt = $dbHandler->prepare("SELECT * FROM Grades WHERE year LIKE :year AND period LIKE :period");
+                            $stmt = $dbHandler->prepare("SELECT * FROM Grades WHERE year LIKE :year AND period LIKE :period");
+                            $stmt->bindParam(":year", $year);
+                            $stmt->bindParam(":period", $period);
+                            $stmt->execute();
+                            if(isset($stmt) && $stmt->rowCount() > 0)
+                            {
+                                while($row = $stmt->fetch(PDO::FETCH_ASSOC))
+                                {
+                                    echo "<tr>";
+                                    echo "<td>" . trim($row["year"], "Y") . "</td>";
+                                    echo "<td>" . substr($row["period"], -1) . "</td>";
+                                    echo "<td>" . $row["code"] . "</td>";
+                                    echo "<td>" . $row["title"] . "</td>";
+                                    if ($row['grade'] < 5.5)
+                                    {
+                                        echo "<td class='errorMessage'>" . $row['grade'] . "</td>";
+                                    }
+                                    else
+                                    {
+                                        echo "<td>" . $row['grade'] . "</td>";
+                                    }
+                                    echo "</tr>";
+                                }
+                                $stmt = $dbHandler->prepare("SELECT AVG(grade) as average_grade FROM Grades WHERE year LIKE :year AND period LIKE :period");
                                 $stmt->bindParam(":year", $year);
                                 $stmt->bindParam(":period", $period);
                                 $stmt->execute();
-                                if (isset($stmt) && $stmt->rowCount() > 0)
+                                while($row = $stmt->fetch(PDO::FETCH_ASSOC))
                                 {
-                                    while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
+                                    echo "<tr>";
+                                    echo "<td colspan='2' class='averageGrade'>Average Grade:</td>";
+                                    echo "<td colspan='2'></td>";
+                                    if ($row['average_grade'] < 5.5)
                                     {
-                                        echo "<tr>";
-                                        echo "<td>" . trim($row["year"], "Y") . "</td>";
-                                        echo "<td>" . substr($row["period"], -1) . "</td>";
-                                        echo "<td>" . $row["code"] . "</td>";
-                                        echo "<td>" . $row["title"] . "</td>";
-                                        echo "<td>" . $row['grade'] . "</td>";
-                                        echo "</tr>";
+                                        echo "<td class='errorMessage'>" . round($row['average_grade'], 2) . "</td>";
                                     }
-                                } 
-                                else
-                                {
-                                    $yearText = (trim($year, "%") != "Y") ? " for year ". trim($year, "%Y") : "";
-                                    $periodText = (trim($period, '%') != "P") ? " of period ". trim($period, "%P") : "";
-                                    echo "<tr><td colspan='5' class='errorMessage'>No grades found". $yearText . $periodText .".</td></tr>";
+                                    else
+                                    {
+                                        echo "<td>" . round($row['average_grade'], 2) . "</td>";
+                                    }
+                                    echo "</tr>";
                                 }
+                            }
+                            else
+                            {
+                                $yearText = (trim($year, "%") != "Y") ? " for year " . trim($year, "%Y") : "";
+                                $periodText = (trim($period, '%') != "P") ? " of period " . trim($period, "%P") : "";
+                                echo "<tr><td colspan='5' class='errorMessage'>No grades found" . $yearText . $periodText . ".</td></tr>";
+                            }
                         }
-                        catch(Exception $ex)
+                        catch (Exception $ex)
                         {
                             echo $ex;
                         }
