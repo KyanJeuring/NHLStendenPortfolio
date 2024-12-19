@@ -42,23 +42,33 @@ input[type="submit"]:hover
     background-color: rgb(var(--activeButtonColor));
 }
 
+table, th, td
+{
+    border-collapse: collapse;
+}
+
 table
 {
     width: 100%;
-    padding-inline: 10%;
+    margin-inline: 10%;
     text-align: center;
+}
+
+tr
+{
+    border: 3px solid rgb(var(--primaryColor));
 }
 
 th
 {
-    border-bottom: 1px solid black;
+    background-color: rgb(var(--primaryColor));
+    color: white;
     font-size: 1.5rem;
     height: 5vh;
 }
 
 td
 {
-    border-bottom: 1px solid black;
     height: 5vh;
 }
 
