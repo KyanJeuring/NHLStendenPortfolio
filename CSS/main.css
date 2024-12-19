@@ -124,7 +124,7 @@ main a:hover, a:hover svg
 	box-shadow: inset 0 0 1rem 1rem rgba(255, 0, 0, 0.5);
 }
 
-.NSY:hover :is(h1, h2, svg), .NSYMessage
+.NSY:hover :is(h1, h2, svg), .NSYMessage, .errorMessage
 {
 	color: rgb(255, 0, 0) !important;
 	fill: rgb(255, 0, 0);
