@@ -77,66 +77,32 @@
                             $gradesQuery = $dbHandler->prepare("SELECT * FROM Grades WHERE year LIKE :year AND period LIKE :period ORDER BY year ASC, period ASC, ects DESC, code DESC");
                             $gradesQuery->bindParam(":year", $year);
                             $gradesQuery->bindParam(":period", $period);
-                            $avgGradeQuery = $dbHandler->prepare("SELECT AVG(grade) as average_grade FROM Grades WHERE year LIKE :year AND period LIKE :period");
-                            $avgGradeQuery->bindParam(":year", $year);
-                            $avgGradeQuery->bindParam(":period", $period);
-                            $ectsQuery = $dbHandler->prepare("SELECT SUM(ects) as total_ects FROM Grades WHERE year LIKE :year AND period LIKE :period");
-                            $ectsQuery->bindParam(":year", $year);
-                            $ectsQuery->bindParam(":period", $period);
                             $gradesQuery->execute();
-                            $avgGradeQuery->execute();
-                            $ectsQuery->execute();
-                            if(isset($gradesQuery) && $gradesQuery->rowCount() > 0)
+                            $calcQuery = $dbHandler->prepare("SELECT AVG(grade) as average_grade, SUM(ects) as total_ects FROM Grades WHERE year LIKE :year AND period LIKE :period");
+                            $calcQuery->bindParam(":year", $year);
+                            $calcQuery->bindParam(":period", $period);
+                            $calcQuery->execute();
+                            
+                            if($gradesQuery->rowCount() > 0)
                             {
-                                while($row = $gradesQuery->fetch(PDO::FETCH_ASSOC))
+                                while($gradesRow = $gradesQuery->fetch(PDO::FETCH_ASSOC))
                                 {
                                     echo "<tr>";
-                                    echo "<td>" . trim($row["year"], "Y") . "</td>";
-                                    echo "<td>" . substr($row["period"], -1) . "</td>";
-                                    echo "<td>" . $row["code"] . "</td>";
-                                    echo "<td>" . $row["title"] . "</td>";
-                                    if ($row['grade'] < 5.5)
-                                    {
-                                        echo "<td class='errorMessage'>" . $row['grade'] . "</td>";
-                                        echo "<td class='errorMessage'>" . $row['ects'] . "</td>";
-                                    }
-                                    else
-                                    {
-                                        echo "<td>" . $row['grade'] . "</td>";
-                                        echo "<td>" . $row['ects'] . "</td>";
-                                    }
+                                    echo "<td>" . trim($gradesRow["year"], "Y") . "</td>";
+                                    echo "<td>" . substr($gradesRow["period"], -1) . "</td>";
+                                    echo "<td>" . $gradesRow["code"] . "</td>";
+                                    echo "<td>" . $gradesRow["title"] . "</td>";
+                                    $gradeClass = ($gradesRow['grade'] < 5.5) ? 'errorMessage' : '';
+                                    echo "<td class='$gradeClass'>" . $gradesRow['grade'] . "</td>";
+                                    echo "<td>" . $gradesRow['ects'] . "</td>";
                                     echo "</tr>";
                                 }
-                                while($row = $avgGradeQuery->fetch(PDO::FETCH_ASSOC))
-                                {
-                                    echo "<tr>";
-                                    echo "<td colspan='2' class='lastRow'>Average Grade &#124 Total ECTS:</td>";
-                                    echo "<td colspan='2'></td>";
-                                    if ($row['average_grade'] < 5.5)
-                                    {
-                                        echo "<td class='errorMessage'>" . round($row['average_grade'], 2) . "</td>";
-                                    }
-                                    else
-                                    {
-                                        echo "<td>" . round($row['average_grade'], 2) . "</td>";
-                                    }
-                                    while($row = $ectsQuery->fetch(PDO::FETCH_ASSOC))
-                                    {
-                                        if($row['total_ects'] < 30)
-                                        {
-                                            echo "<td class='errorMessage'>" . $row['total_ects'] . "</td>";
-                                        }
-                                        elseif($row['total_ects'] >= 30 && $row['total_ects'] < 45)
-                                        {
-                                            echo "<td class='warningMessage'>" . $row['total_ects'] . "</td>";
-                                        }
-                                        else
-                                        {
-                                            echo "<td>" . $row['total_ects'] . "</td>";
-                                        }
-                                    }
-                                    echo "</tr>";
-                                }
+                                $calcRow = $calcQuery->fetch(PDO::FETCH_ASSOC);
+                                echo "<tr><td colspan='2' class='lastRow'>Average Grade &#124 Total ECTS:</td><td colspan='2'></td>";
+                                $avgGradeClass = ($calcRow['average_grade'] < 5.5) ? 'errorMessage' : '';
+                                echo "<td class='$avgGradeClass'>" . round($calcRow['average_grade'], 2) . "</td>";
+                                $ectsClass = ($calcRow['total_ects'] < 30) ? 'errorMessage' : (($calcRow['total_ects'] < 45) ? 'warningMessage' : '');
+                                echo "<td class='$ectsClass'>" . $calcRow['total_ects'] . "</td></tr>";
                             }
                             else
                             {
