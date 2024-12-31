@@ -102,13 +102,15 @@
                                 $avgGradeClass = ($calcRow['average_grade'] < 5.5) ? 'errorMessage' : '';
                                 echo "<td class='$avgGradeClass'>" . round($calcRow['average_grade'], 2) . "</td>";
                                 $ectsClass = ($calcRow['total_ects'] < 30) ? 'errorMessage' : (($calcRow['total_ects'] < 45) ? 'warningMessage' : '');
-                                echo "<td class='$ectsClass'>" . $calcRow['total_ects'] . "</td></tr>";
+                                echo "<td class='$ectsClass'>" . $calcRow['total_ects'] . "</td>";
+                                echo "</tr>";
                             }
                             else
                             {
                                 $yearText = (trim($year, "%") != "Y") ? " for year " . trim($year, "%Y") : "";
                                 $periodText = (trim($period, '%') != "P") ? " of period " . trim($period, "%P") : "";
-                                echo "<tr><td colspan='6' class='errorMessage'>No grades found" . $yearText . $periodText . ".</td></tr>";
+                                echo "<tr><td colspan='6' class='errorMessage'>No grades found" . $yearText . $periodText . ".</td>";
+                                echo "</tr>";
                             }
                         }
                         catch (Exception $ex)
