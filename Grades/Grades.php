@@ -66,20 +66,29 @@
                 <th>Year</th>
                 <th>Period</th>
                 <th>Code</th>
-                <th>Exam name</th>
+                <th>Exam Name</th>
                 <th>Grade</th>
+                <th>ECTS</th>
                 <?php                    
                     if($dbHandler)
                     {
                         try
                         {
-                            $stmt = $dbHandler->prepare("SELECT * FROM Grades WHERE year LIKE :year AND period LIKE :period");
-                            $stmt->bindParam(":year", $year);
-                            $stmt->bindParam(":period", $period);
-                            $stmt->execute();
-                            if(isset($stmt) && $stmt->rowCount() > 0)
+                            $gradesQuery = $dbHandler->prepare("SELECT * FROM Grades WHERE year LIKE :year AND period LIKE :period ORDER BY year ASC, period ASC, ects DESC, code DESC");
+                            $gradesQuery->bindParam(":year", $year);
+                            $gradesQuery->bindParam(":period", $period);
+                            $avgGradeQuery = $dbHandler->prepare("SELECT AVG(grade) as average_grade FROM Grades WHERE year LIKE :year AND period LIKE :period");
+                            $avgGradeQuery->bindParam(":year", $year);
+                            $avgGradeQuery->bindParam(":period", $period);
+                            $ectsQuery = $dbHandler->prepare("SELECT SUM(ects) as total_ects FROM Grades WHERE year LIKE :year AND period LIKE :period");
+                            $ectsQuery->bindParam(":year", $year);
+                            $ectsQuery->bindParam(":period", $period);
+                            $gradesQuery->execute();
+                            $avgGradeQuery->execute();
+                            $ectsQuery->execute();
+                            if(isset($gradesQuery) && $gradesQuery->rowCount() > 0)
                             {
-                                while($row = $stmt->fetch(PDO::FETCH_ASSOC))
+                                while($row = $gradesQuery->fetch(PDO::FETCH_ASSOC))
                                 {
                                     echo "<tr>";
                                     echo "<td>" . trim($row["year"], "Y") . "</td>";
@@ -89,21 +98,19 @@
                                     if ($row['grade'] < 5.5)
                                     {
                                         echo "<td class='errorMessage'>" . $row['grade'] . "</td>";
+                                        echo "<td class='errorMessage'>" . $row['ects'] . "</td>";
                                     }
                                     else
                                     {
                                         echo "<td>" . $row['grade'] . "</td>";
+                                        echo "<td>" . $row['ects'] . "</td>";
                                     }
                                     echo "</tr>";
                                 }
-                                $stmt = $dbHandler->prepare("SELECT AVG(grade) as average_grade FROM Grades WHERE year LIKE :year AND period LIKE :period");
-                                $stmt->bindParam(":year", $year);
-                                $stmt->bindParam(":period", $period);
-                                $stmt->execute();
-                                while($row = $stmt->fetch(PDO::FETCH_ASSOC))
+                                while($row = $avgGradeQuery->fetch(PDO::FETCH_ASSOC))
                                 {
                                     echo "<tr>";
-                                    echo "<td colspan='2' class='averageGrade'>Average Grade:</td>";
+                                    echo "<td colspan='2' class='lastRow'>Average Grade &#124 Total ECTS:</td>";
                                     echo "<td colspan='2'></td>";
                                     if ($row['average_grade'] < 5.5)
                                     {
@@ -113,6 +120,21 @@
                                     {
                                         echo "<td>" . round($row['average_grade'], 2) . "</td>";
                                     }
+                                    while($row = $ectsQuery->fetch(PDO::FETCH_ASSOC))
+                                    {
+                                        if($row['total_ects'] < 30)
+                                        {
+                                            echo "<td class='errorMessage'>" . $row['total_ects'] . "</td>";
+                                        }
+                                        elseif($row['total_ects'] >= 30 && $row['total_ects'] < 45)
+                                        {
+                                            echo "<td class='warningMessage'>" . $row['total_ects'] . "</td>";
+                                        }
+                                        else
+                                        {
+                                            echo "<td>" . $row['total_ects'] . "</td>";
+                                        }
+                                    }
                                     echo "</tr>";
                                 }
                             }
@@ -120,7 +142,7 @@
                             {
                                 $yearText = (trim($year, "%") != "Y") ? " for year " . trim($year, "%Y") : "";
                                 $periodText = (trim($period, '%') != "P") ? " of period " . trim($period, "%P") : "";
-                                echo "<tr><td colspan='5' class='errorMessage'>No grades found" . $yearText . $periodText . ".</td></tr>";
+                                echo "<tr><td colspan='6' class='errorMessage'>No grades found" . $yearText . $periodText . ".</td></tr>";
                             }
                         }
                         catch (Exception $ex)

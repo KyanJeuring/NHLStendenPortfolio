@@ -50,7 +50,7 @@ table, th, td
 table
 {
     width: 100%;
-    margin-inline: 10%;
+    margin-inline: 5%;
     text-align: center;
 }
 
@@ -72,13 +72,13 @@ td
     height: 5vh;
 }
 
-.averageGrade
+.lastRow
 {
     font-weight: bold;
     color: rgb(var(--primaryColor));
 }
 
-.errorMessage
+:is(.errorMessage, .warningMessage)
 {
     font-weight: bold;
 }
