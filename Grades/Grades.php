@@ -111,7 +111,7 @@
                             {
                                 $yearText = (trim($year, "%") != "Y") ? " for year " . substr($year, -2, -1) : "";
                                 $periodText = (trim($period, '%') != "P") ? " of period " . substr($period, -2, -1) : "";
-                                echo "<tr><td colspan='6' class='errorMessage'>No grades found" . $yearText . $periodText . ".</td>";
+                                echo "<tr><td colspan='6' class='errorMessage'>No grades found" . $yearText . $periodText . "&#33;</td>";
                                 echo "</tr>";
                             }
                         }
