@@ -98,7 +98,9 @@
                                     echo "</tr>";
                                 }
                                 $calcRow = $calcQuery->fetch(PDO::FETCH_ASSOC);
-                                echo "<tr><td colspan='2' class='lastRow'>Average Grade &#124 Total ECTS:</td><td colspan='2'></td>";
+                                echo "<tr>";
+                                echo "<td colspan='2' class='calcTd'>Average Grade &#124 Total ECTS:</td>";
+                                echo "<td colspan='2'></td>";
                                 $avgGradeClass = ($calcRow['average_grade'] < 5.5) ? 'errorMessage' : '';
                                 echo "<td class='$avgGradeClass'>" . round($calcRow['average_grade'], 1, 1) . "</td>";
                                 $ectsClass = ($calcRow['total_ects'] < 30) ? 'errorMessage' : (($calcRow['total_ects'] < 45) ? 'warningMessage' : '');
